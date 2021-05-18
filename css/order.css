@@ -1,0 +1,17 @@
+
+@import url(../css/index.css);
+
+/*footer*/
+footer {
+  height: 100px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1500px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  color: #128571;
+}
+
+/*footer*/

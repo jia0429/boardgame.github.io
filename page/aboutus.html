@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../css/aboutus.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h2>GAMEROOM.COM</h2>
+      <img src="../image/search.jpg" class="search-logo">
+      <a href="../page/shoppingcart.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <ul class="menu">
+        <li><a href="../index.html">
+            <div class="underline">首頁</div>
+          </a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">商品區</a>
+          <div class="dropdown-content">
+            <a href="../page/allbg.html">所有桌遊</a>
+            <a href="../page/bgless.html">少人桌遊</a>
+            <a href="../page/bgmore.html">多人桌遊</a>
+          </div>
+        </li>
+        <li><a href="../page/shoppingcart.html">購物車</a></li>
+        <li><a href="../page/aboutus.html">關於我們</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
+          <div class="dropdown-content">
+            <a href="../page/sign.html">登入/註冊</a>
+            <a href="../page/revise.html">修改資料</a>
+            <a href="../page/order.html">我的訂單</a>
+          </div>
+        </li>
+      </ul>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <p class="aboutus">About Us</p>
+    <div class="containerus">
+      <div class="subsection">
+        <img src="../image/ziyi.jpg" class="nina">
+        <p class="name">資管二甲 許景甯</p><a href="https://www.instagram.com/nini_nana_ning/" target="_blank"><img
+            src="../image/ig.png" class="ign"></a>
+        <p class="content">哈哈是我啦</p>
+      </div>
+
+      <div class="subsection">
+        <img src="../image/ziyi.jpg" class="hao">
+        <p class="name">資管二甲 蔡皓羽</p><a href="https://www.instagram.com/19_________mimikyu/" target="_blank"><img
+            src="../image/ig.png" class="igh"></a>
+        <p class="content">哈哈是我啦</p>
+      </div>
+      <div class="subsection">
+        <img src="../image/ziyi.jpg" class="ziyi">
+        <p class="name">資管二乙 陳紫宜</p><a href="https://www.instagram.com/01_ziyi/" target="_blank"><img
+            src="../image/ig.png" class="igz"></a>
+        <p class="content">哈哈是我啦</p>
+      </div>
+      <div class="subsection">
+        <img src="../image/ziyi.jpg" class="jia">
+        <p class="name">資管二乙 戴慈家</p><a href="https://www.instagram.com/jia.0429_/" target="_blank"><img
+            src="../image/ig.png" class="igj"></a>
+        <p class="content">哈哈是我啦</p>
+      </div>
+    </div>
+    <p class="contactus">Contact Us</p>
+    <div class="containerform">
+      <form action="mailto:minichen900213@gmail.com">
+        <label for="name" class="font">姓名:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" class="fontans"><br>
+        <label for="phone" class="font">電話:</label><br>
+        <input type="text" id="phone" name="phone" placeholder="Your Phone Number" class="fontans"><br>
+        <label for="eamil" class="font">電子信箱:</label><br>
+        <input type="text" id="email" name="eamil" placeholder="Your E-mail" class="fontans"><br>
+        <label for="subject" class="font">主旨:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Mail Subject" class="fontans"><br>
+        <label for="write" class="font">告訴我們:</label><br>
+        <textarea id="write" name="write" placeholder="Write something.." class="writesth"></textarea>
+        <input type="submit" value="送出">
+      </form>
+    </div>
+    <footer>hi</footer>
+  </div>
+</body>
+
+</html>

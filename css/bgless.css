@@ -1,0 +1,173 @@
+@import url(../css/index.css);
+
+/*footer*/
+footer {
+  height: 100px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1500px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  color: #128571;
+}
+
+/*footer*/
+.bgless {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  color: #3a867a;
+
+}
+
+.content {
+
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #3a867a;
+}
+
+.a-bg4 {
+  width: auto;
+  max-width: 1200px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.a-bg5 {
+  width: auto;
+  max-width: 1200px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.a-bg6 {
+  width: auto;
+  max-width: 1200px;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+.a-bg4,
+.a-bg5,
+.a-bg6 {
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px 1px;
+}
+
+.bg4 {
+  font-size: 40px;
+  font-weight: 800;
+  position: absolute;
+  top: 850px;
+  left: 290px;
+}
+
+.price4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #3d7d8d;
+  position: absolute;
+  top: 925px;
+  left: 340px;
+}
+
+.bg5 {
+  font-size: 40px;
+  font-weight: 800;
+  position: absolute;
+  top: 850px;
+  left: 850px;
+}
+
+.price5 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #3d7d8d;
+  position: absolute;
+  top: 925px;
+  left: 905px;
+}
+
+.bg6 {
+  font-size: 40px;
+  font-weight: 800;
+  position: absolute;
+  top: 850px;
+  left: 1485px;
+}
+
+.price6 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #3d7d8d;
+  position: absolute;
+  top: 925px;
+  left: 1485px;
+}
+
+a {
+  color: #3d7d8d;
+}
+
+.overlay4 {
+  position: absolute;
+  top: 377px;
+  left: 190px;
+  border-radius: 5%;
+  height: 500px;
+  width: 380px;
+  opacity: 0;
+  transition: 0s ease;
+  background-color: #000000;
+}
+
+.overlay5 {
+  position: absolute;
+  top: 377px;
+  left: 760px;
+  border-radius: 5%;
+  height: 500px;
+  width: 380px;
+  opacity: 0;
+  transition: 0s ease;
+  background-color: #000000;
+}
+
+.overlay6 {
+  position: absolute;
+  top: 377px;
+  left: 1330px;
+  border-radius: 5%;
+  height: 500px;
+  width: 380px;
+  opacity: 0;
+  transition: 0s ease;
+  background-color: #000000;
+}
+
+.overlay4:hover {
+  opacity: 0.5;
+}
+
+.overlay5:hover {
+  opacity: 0.5;
+}
+
+.overlay6:hover {
+  opacity: 0.5;
+}
+
+.click {
+  padding-top: 220px;
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../css/bgmore.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h2>GAMEROOM.COM</h2>
+      <img src="../image/search.jpg" class="search-logo">
+      <a href="../page/shoppingcart.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <ul class="menu">
+        <li><a href="../index.html">
+            <div class="underline">首頁</div>
+          </a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">商品區</a>
+          <div class="dropdown-content">
+            <a href="../page/allbg.html">所有桌遊</a>
+            <a href="../page/bgless.html">少人桌遊</a>
+            <a href="../page/bgmore.html">多人桌遊</a>
+          </div>
+        </li>
+        <li><a href="../page/shoppingcart.html">購物車</a></li>
+        <li><a href="../page/aboutus.html">關於我們</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
+          <div class="dropdown-content">
+            <a href="../page/sign.html">登入/註冊</a>
+            <a href="../page/revise.html">修改資料</a>
+            <a href="../page/order.html">我的訂單</a>
+          </div>
+        </li>
+      </ul>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <p class="bgmore">-多人桌遊- </p>
+    <p class="content">想不到好友聚會要做什麼嗎 ? 玩桌遊是你的最佳選擇 !<br>多人桌遊適合6-12人，最適合多人歡聚，快來一起享受爾虞我詐的快感吧 ! </p>
+
+    <a href="bg1.html"><img src="../image/bg1.jpg" class="a-bg1">
+      <div class="overlay1">
+        <p class="click">🔎更多資訊🔍</p>
+      </div>
+      <p class="bg1">狼人殺</p>
+    </a>
+    <p class="price1">600/組</p>
+
+    <a href="bg2.html"><img src="../image/bg2.jpg" class="a-bg2">
+      <div class="overlay2">
+        <p class="click">🔎更多資訊🔍</p>
+      </div>
+      <p class="bg2">阿瓦隆</p>
+    </a>
+    <p class="price2">495/組</p>
+
+    <a href="bg3.html"><img src="../image/bg3.jpg" class="a-bg3">
+      <div class="overlay3">
+        <p class="click">🔎更多資訊🔍</p>
+      </div>
+      <p class="bg3">BANG!</p>
+    </a>
+    <p class="price3">740/組</p>
+    <footer>hi</footer>
+  </div>
+</body>
+
+</html>
