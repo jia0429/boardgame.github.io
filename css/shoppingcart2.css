@@ -1,0 +1,63 @@
+@import url(../css/index.css);
+
+fieldset {
+  display: block;
+  min-inline-size: min-content;
+  width: 45%;
+  border-color: #18749956;
+}
+
+.buy-form {
+  position: absolute;
+  left: 28%;
+  top: 30%;
+}
+
+
+.buy-text{
+  text-align: left;
+  color: #2760ac;
+  font-size: 23px;
+  padding-left: 20px;
+}
+
+
+
+.buy {
+  font-size: 22px;
+  color: #2760ac;
+  border-color: #39b0ce41;
+  background-color: #2ea4c231;
+  padding: 2px 35px 5px 35px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+}
+.cart-step2{
+  padding: 20px 20px 20px 20px;
+  position: absolute;
+  top: 93%;
+  right: 27%;
+  font-size: 23px;
+  font-family: Comic Sans MS,
+  Comic Sans,
+  cursive;
+  color: #454cb3;
+  background-color: #e2d16f7e;
+  border: 1px solid #8d966252;
+  border-radius: 20px;
+}
+/*footer*/
+footer {
+  height: 100px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 880px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  color: #128571;
+}
+
+/*footer*/

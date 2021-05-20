@@ -1,5 +1,6 @@
 @import url(../css/index.css);
 
+
 .allbg {
   font-size: 50px;
   font-weight: 800;
@@ -38,24 +39,24 @@
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 100%;
-  left: 10%;
+  top: 896px;
+  left: 190px;
 }
 
 .a-bg5 {
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 100%;
-  left: 40%;
+  top: 896px;
+  left: 760px;
 }
 
 .a-bg6 {
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 100%;
-  left: 70%;
+  top: 896px;
+  left: 1329px;
 }
 
 .a-bg1,
@@ -67,6 +68,7 @@
   border-radius: 25px;
   box-shadow: 10px 10px 15px 1px;
 }
+
 /*footer*/
 footer {
   height: 100px;

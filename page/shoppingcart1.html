@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../css/shoppingcart1.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h2>GAMEROOM.COM</h2>
+      <img src="../image/search.jpg" class="search-logo">
+      <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <ul class="menu">
+        <li><a href="../index.html">
+            <div class="underline">首頁</div>
+          </a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">商品區</a>
+          <div class="dropdown-content">
+            <a href="../page/allbg.html">所有桌遊</a>
+            <a href="../page/bgless.html">少人桌遊</a>
+            <a href="../page/bgmore.html">多人桌遊</a>
+          </div>
+        </li>
+        <li><a href="../page/shoppingcart1.html">購物車</a></li>
+        <li><a href="../page/aboutus.html">關於我們</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
+          <div class="dropdown-content">
+            <a href="../page/sign.html">登入/註冊</a>
+            <a href="../page/revise.html">修改資料</a>
+            <a href="../page/order.html">我的訂單</a>
+          </div>
+        </li>
+      </ul>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <div id="cart">
+      <div class="container">
+        <div class="cart-title">
+          <div class="product">&nbsp;&nbsp;&nbsp;商品</div>
+          <div class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;單價</div>
+          <div class="count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;數量</div>
+          <div class="amount">&nbsp;&nbsp;&nbsp;總價</div>
+          <div class="operate-t">&nbsp;&nbsp;執行</div>
+        </div>
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg2.jpg">
+            <div class="name">&nbsp;狼人殺</div>
+          </div>
+
+          <div class="price">$450</div>
+          <div class="count">
+            <button>-</button>
+            <input type="text" class="number">
+            <button>+</button>
+          </div>
+          <div class="amount">$450</div>
+          <div>
+            <button class="operate">刪除</button>
+          </div>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg1.jpg">
+            <div class="name">&nbsp;阿瓦隆</div>
+          </div>
+
+          <div class="price">$495</div>
+          <div class="count">
+            <button>-</button>
+            <input type="text" class="number">
+            <button>+</button>
+          </div>
+          <div class="amount">$495</div>
+          <div>
+            <button  class="operate">刪除</button>
+          </div>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg3.jpg">
+            <div class="name">BANG！</div>
+          </div>
+
+          <div class="price">$740</div>
+          <div class="count">
+            <button>-</button>
+            <input type="text" class="number">
+            <button>+</button>
+          </div>
+          <div class="amount">$740</div>
+          <div >
+            <button class="operate">刪除</button>
+          </div>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg4.jpg">
+            <div class="name">德國蟑螂</div>
+          </div>
+
+          <div class="price">$440</div>
+          <div class="count">
+            <button>-</button>
+            <input type="text" class="number">
+            <button>+</button>
+          </div>
+          <div class="amount">$440</div>
+          <div >
+            <button class="operate">刪除</button>
+          </div>
+        </div>
+
+      <div class="cart-text">
+        <div class="product">
+          <img src="../image/bg5.jpg">
+          <div class="name">妙語說書人</div>
+        </div>
+      
+        <div class="price">$1160</div>
+        <div class="count">
+          <button>-</button>
+          <input type="text" class="number">
+          <button>+</button>
+        </div>
+        <div class="amount">$1160</div>
+        <div >
+          <button class="operate">刪除</button>
+        </div>
+      </div>
+
+            <div class="cart-text">
+              <div class="product">
+                <img src="../image/bg6.jpg">
+                <div class="name">Rummikub</div>
+              </div>
+            
+              <div class="price">$590</div>
+              <div class="count">
+                <button>-</button>
+                <input type="text" class="number">
+                <button>+</button>
+              </div>
+              <div class="amount">$590</div>
+              <div >
+                <button class="operate">刪除</button>
+              </div>
+            </div>
+
+      </div>
+      <button input type="submit" class="cart-step1"><a href="shoppingcart2.html" style="text-decoration: none; color: #454cb3;">下一步:確認付款資訊</a></button>
+    </div>
+
+    <footer>©COPYRIGHT:GAMEROOM.COM</footer>
+  </div>
+</body>
+
+</html>

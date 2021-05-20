@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="../css/bgmore.css">
+  <link rel="stylesheet" type="text/css" href="../css/shoppingcart3.css">
 </head>
 
 <body>
@@ -42,9 +42,7 @@
     <script>
       var mybutton = document.getElementById("myBtn");
 
-      window.onscroll = function () {
-        scrollFunction()
-      };
+      window.onscroll = function () { scrollFunction() };
 
       function scrollFunction() {
         if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -53,39 +51,17 @@
           mybutton.style.display = "none";
         }
       }
-
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
     </script>
-    <p class="bgmore"><img src="../image/m-title.jpg"></p>
-    <p class="content">想不到好友聚會要做什麼嗎 ? 玩桌遊是你的最佳選擇 !<br>多人桌遊適合6-12人，最適合多人歡聚，快來一起享受爾虞我詐的快感吧 ! </p>
+     
+     <h1>您已完成購買，謝謝您的購買！</h1>
+      <button input type="submit" class="cart-step3"><a href="order.html" style="text-decoration: none; color: #454cb3;">查看我的訂單</a></button>
+ 
 
-    <a href="bg1.html"><img src="../image/bg1.jpg" class="a-bg1">
-      <div class="overlay1">
-        <p class="click">🔎更多資訊🔍</p>
-      </div>
-      <p class="bg1">狼人殺</p>
-    </a>
-    <p class="price1">600/組</p>
-
-    <a href="bg2.html"><img src="../image/bg2.jpg" class="a-bg2">
-      <div class="overlay2">
-        <p class="click">🔎更多資訊🔍</p>
-      </div>
-      <p class="bg2">阿瓦隆</p>
-    </a>
-    <p class="price2">495/組</p>
-
-    <a href="bg3.html"><img src="../image/bg3.jpg" class="a-bg3">
-      <div class="overlay3">
-        <p class="click">🔎更多資訊🔍</p>
-      </div>
-      <p class="bg3">BANG!</p>
-    </a>
-    <p class="price3">740/組</p>
-    <footer>hi</footer>
+    <footer>©COPYRIGHT:GAMEROOM.COM</footer>
   </div>
 </body>
 

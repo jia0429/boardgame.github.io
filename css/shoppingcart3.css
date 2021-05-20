@@ -1,0 +1,35 @@
+@import url(../css/index.css);
+
+h1{
+  position: absolute;
+  top: 35%;
+  left: 37%;
+}
+.cart-step3{
+  padding: 20px 20px 20px 20px;
+  position: absolute;
+  top: 70%;
+  right: 27%;
+  font-size: 23px;
+  font-family: Comic Sans MS,
+  Comic Sans,
+  cursive;
+  color: #454cb3;
+  background-color: #e2d16f7e;
+  border: 1px solid #8d966252;
+  border-radius: 20px;
+}
+/*footer*/
+footer {
+  height: 100px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top:750px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  color: #128571;
+}
+
+/*footer*/
