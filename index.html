@@ -13,7 +13,7 @@
     <header class="header">
       <h2>GAMEROOM.COM</h2>
       <img src="image/search.jpg" class="search-logo">
-      <a href="page/shoppingcart.html"><img src="image/cart.jpg" class="cart-logo"></a>
+      <a href="page/shoppingcart1.html"><img src="image/cart.jpg" class="cart-logo"></a>
       <ul class="menu">
         <li><a href="index.html">
             <div class="underline">首頁</div>
@@ -26,7 +26,7 @@
             <a href="page/bgmore.html">多人桌遊</a>
           </div>
         </li>
-        <li><a href="page/shoppingcart.html">購物車</a></li>
+        <li><a href="page/shoppingcart1.html">購物車</a></li>
         <li><a href="page/aboutus.html">關於我們</a></li>
         <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
           <div class="dropdown-content">
@@ -42,7 +42,9 @@
     <script>
       var mybutton = document.getElementById("myBtn");
 
-      window.onscroll = function () { scrollFunction() };
+      window.onscroll = function () {
+        scrollFunction()
+      };
 
       function scrollFunction() {
         if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -51,6 +53,7 @@
           mybutton.style.display = "none";
         }
       }
+
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -66,12 +69,12 @@
     </div>
     <div class="hotsale">
       <img src="image/hotsale.jpg" class="h-t">
-      <img src="image/top1.jpg" class="top1">
-      <img src="image/top2.jpg" class="top2">
-      <img src="image/top3.jpg" class="top3">
-      <img src="image/bg1.jpg" class="h1-img">
-      <img src="image/bg2.jpg" class="h2-img">
-      <img src="image/bg3.jpg" class="h3-img">
+      <a href="page/bg1.html"><img src="image/top1.jpg" class="top1"></a>
+      <a href="page/bg2.html"><img src="image/top2.jpg" class="top2"></a>
+      <a href="page/bg3.html"><img src="image/top3.jpg" class="top3"></a>
+      <a href="page/bg1.html"><img src="image/bg1.jpg" class="h1-img"></a>
+      <a href="page/bg2.html"><img src="image/bg2.jpg" class="h2-img"></a>
+      <a href="page/bg3.html"><img src="image/bg3.jpg" class="h3-img"></a>
     </div>
     <footer>hi</footer>
   </div>
