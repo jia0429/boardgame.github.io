@@ -1,7 +1,11 @@
 @import url(../css/index.css);
-
+.step-title{
+  position: absolute;
+  top: 10%;
+  left: 14%;
+}
 #cart {
-  padding: 15%;
+  padding: 18%;
   font-size: 25px;
 }
 
@@ -46,25 +50,27 @@
   margin-left: 100px;
 }
 
-.number {
+#quantity,
+#quantity2,
+#quantity3,
+#quantity4,
+#quantity5,
+#quantity6 {
   width: 50px;
 }
 
-.operate {
-  padding: 10px 18px 10px 18px;
-  font-size: 23px;
+.s-total {
+  padding: 10px 18px 10px 115px;
+  font-size: 27px;
    font-family: Comic Sans MS,
    Comic Sans,
    cursive;
    color: #454cb3;
-   background-color: #f1e7ad7e;
-   border: 1px solid #8d966252;
-   border-radius: 10px;
 }
 .cart-step1{
   padding: 20px 20px 20px 20px;
   position: absolute;
-  top: 200%;
+  top: 205%;
   right: 23%;
   font-size: 23px;
   font-family: Comic Sans MS,
@@ -81,7 +87,7 @@ footer {
   background-color: #dfe7fd;
   bottom: 0;
   width: 100%;
-  margin-top: 100px;
+  margin-top: -80px;
   text-align: center;
   font-size: 25px;
   font-family: Comic Sans MS;

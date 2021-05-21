@@ -1,6 +1,9 @@
-
 @import url(../css/index.css);
-
+.order-img{
+  position: absolute;
+  top: 8%;
+  left: 15%;
+}
 /*footer*/
 footer {
   height: 100px;
@@ -15,3 +18,52 @@ footer {
 }
 
 /*footer*/
+tr:nth-child(1) {
+  background-color: #a2d2ff;
+}
+
+tr {
+  background-color: #ddcba365;
+}
+
+.item {
+  position: absolute;
+  left: 23%;
+  top: 32%;
+  width: 1000px;
+  font-size: 30px;
+  color: #3d7d8d;
+  text-align: center;
+}
+
+.bg1 {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 3%;
+
+}
+
+.bg2 {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 3%;
+
+}
+
+.total {
+  text-align: right;
+  color: red;
+  padding-right: 20px;
+}
+
+.member {
+  position: absolute;
+  left: 23%;
+  top: 130%;
+  width: 600px;
+  font-size: 30px;
+  color: #3d7d8d;
+
+}

@@ -1,4 +1,5 @@
 @import url(../css/index.css);
+
 fieldset {
   display: block;
   min-inline-size: min-content;
@@ -27,7 +28,9 @@ fieldset {
   font-family: Comic Sans MS,
     Comic Sans,
     cursive;
+  border-radius: 6%;
 }
+
 /*footer*/
 footer {
   height: 100px;

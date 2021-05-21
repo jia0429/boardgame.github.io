@@ -1,5 +1,9 @@
 @import url(../css/index.css);
-
+.step-title {
+  position: absolute;
+  top: 10%;
+  left: 14%;
+}
 h1{
   position: absolute;
   top: 35%;

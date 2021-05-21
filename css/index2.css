@@ -1,9 +1,16 @@
 @import url(index.css);
+
+.memo{
+  position: absolute;
+  width: 300px;
+  right: 3%;
+  top: 20%;
+}
 /*ad*/
 .coverflow {
   width: 100%;
   max-width: 1200px;
-  margin: 2% 0 0 20%;
+  margin: 2% 0 0 12%;
   position: relative;
   left: 12%;
 }
@@ -20,6 +27,8 @@
 }
 
 .coverflow>a>img {
+  width: 1000px;
+  max-height: 700px;
   max-width: 100%;
 }
 
@@ -83,16 +92,16 @@
 /*ad2*/
 .ad{
  position: absolute;
- top: 80%;
- left: 32%;
+ top: 88.5%;
+ left: 24%;
  max-width:1200px ;
 }
 
 #run{
-  width:700px;
+  width:1000px;
   height: 40px;
   font-size: 25px;
-  background-color: #eb679eb9;
+  background-color: #ebe967b9;
   color: #195a4f;
 }
 /*ad2*/

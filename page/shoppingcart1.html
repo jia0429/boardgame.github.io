@@ -6,6 +6,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../css/shoppingcart1.css">
+  <script src="../js/shoppingcart1.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+
+  <script>
+    //狼人殺
+    $(function () {
+      var t = $("#quantity");
+      $("#add").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total").html((parseInt(t.val()) * 450).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //阿瓦隆
+    $(function () {
+      var t = $("#quantity2");
+      $("#add2").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min2").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min2").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min2").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total2").html((parseInt(t.val()) * 495).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //BANG
+    $(function () {
+      var t = $("#quantity3");
+      $("#add3").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min3").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min3").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min3").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total3").html((parseInt(t.val()) * 740).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //德國蟑螂
+    $(function () {
+      var t = $("#quantity4");
+      $("#add4").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min4").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min4").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min4").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total4").html((parseInt(t.val()) * 440).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //說書人
+    $(function () {
+      var t = $("#quantity5");
+      $("#add5").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min5").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min5").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min5").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total5").html((parseInt(t.val()) * 1160).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //拉密
+    $(function () {
+      var t = $("#quantity6");
+      $("#add6").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#min6").removeAttr("disabled");
+        setTotal();
+      })
+      $("#min6").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#min6").attr("disabled", "disabled")
+        }
+        setTotal();
+      })
+      function setTotal() {
+        $("#total6").html((parseInt(t.val()) * 590).toFixed(2));
+      }
+      setTotal();
+    })
+  </script>
+
+  <script>
+    //商品總價
+ 
+  </script>
 </head>
 
 <body>
@@ -56,49 +208,44 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
+    <div class="step-title">
+      <a href="shoppingcart1.html"><img src="../image/step1-a.jpg"></a>
+      <a href="shoppingcart2.html"><img src="../image/step2-b.jpg"></a>
+      <a href="shoppingcart3.html"><img src="../image/step3-b.jpg"></a>
+    </div>
     <div id="cart">
       <div class="container">
         <div class="cart-title">
           <div class="product">&nbsp;&nbsp;&nbsp;商品</div>
-          <div class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;單價</div>
-          <div class="count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;數量</div>
+          <div class="price">&nbsp;&nbsp;&nbsp;單價</div>
+          <div class="count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;數量</div>
           <div class="amount">&nbsp;&nbsp;&nbsp;總價</div>
-          <div class="operate-t">&nbsp;&nbsp;執行</div>
         </div>
-        <div class="cart-text">
-          <div class="product">
-            <img src="../image/bg2.jpg">
-            <div class="name">&nbsp;狼人殺</div>
-          </div>
-
-          <div class="price">$450</div>
-          <div class="count">
-            <button>-</button>
-            <input type="text" class="number">
-            <button>+</button>
-          </div>
-          <div class="amount">$450</div>
-          <div>
-            <button class="operate">刪除</button>
-          </div>
-        </div>
-
         <div class="cart-text">
           <div class="product">
             <img src="../image/bg1.jpg">
+            <div class="name">&nbsp;狼人殺</div>
+          </div>
+          <div class="price">$450</div>
+          <input id="min" name="" type="button" value="-" />
+          <input id="quantity" name="" type="text" value="0" />
+          <input id="add" name="" type="button" value="+" />
+          <p class="s-total">總價：<label id="total"></label></p>
+
+
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg2.jpg">
             <div class="name">&nbsp;阿瓦隆</div>
           </div>
 
           <div class="price">$495</div>
-          <div class="count">
-            <button>-</button>
-            <input type="text" class="number">
-            <button>+</button>
-          </div>
-          <div class="amount">$495</div>
-          <div>
-            <button  class="operate">刪除</button>
-          </div>
+          <input id="min2" name="" type="button" value="-" />
+          <input id="quantity2" name="" type="text" value="0" />
+          <input id="add2" name="" type="button" value="+" />
+          <p class="s-total">總價：<label id="total2"></label></p>
         </div>
 
         <div class="cart-text">
@@ -108,15 +255,10 @@
           </div>
 
           <div class="price">$740</div>
-          <div class="count">
-            <button>-</button>
-            <input type="text" class="number">
-            <button>+</button>
-          </div>
-          <div class="amount">$740</div>
-          <div >
-            <button class="operate">刪除</button>
-          </div>
+          <input id="min3" name="" type="button" value="-" />
+          <input id="quantity3" name="" type="text" value="0" />
+          <input id="add3" name="" type="button" value="+" />
+          <p class="s-total">總價：<label id="total3"></label></p>
         </div>
 
         <div class="cart-text">
@@ -126,55 +268,42 @@
           </div>
 
           <div class="price">$440</div>
-          <div class="count">
-            <button>-</button>
-            <input type="text" class="number">
-            <button>+</button>
-          </div>
-          <div class="amount">$440</div>
-          <div >
-            <button class="operate">刪除</button>
-          </div>
+          <input id="min4" name="" type="button" value="-" />
+          <input id="quantity4" name="" type="text" value="0" />
+          <input id="add4" name="" type="button" value="+" />
+          <p class="s-total">總價：<label id="total4"></label></p>
         </div>
 
-      <div class="cart-text">
-        <div class="product">
-          <img src="../image/bg5.jpg">
-          <div class="name">妙語說書人</div>
-        </div>
-      
-        <div class="price">$1160</div>
-        <div class="count">
-          <button>-</button>
-          <input type="text" class="number">
-          <button>+</button>
-        </div>
-        <div class="amount">$1160</div>
-        <div >
-          <button class="operate">刪除</button>
-        </div>
-      </div>
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg5.jpg">
+            <div class="name">妙語說書人</div>
+          </div>
 
-            <div class="cart-text">
-              <div class="product">
-                <img src="../image/bg6.jpg">
-                <div class="name">Rummikub</div>
-              </div>
-            
-              <div class="price">$590</div>
-              <div class="count">
-                <button>-</button>
-                <input type="text" class="number">
-                <button>+</button>
-              </div>
-              <div class="amount">$590</div>
-              <div >
-                <button class="operate">刪除</button>
-              </div>
-            </div>
+          <div class="price">$1160</div>
+          <input id="min5" name="" type="button" value="-" />
+          <input id="quantity5" name="" type="text" value="0" />
+          <input id="add5" name="" type="button" value="+" />
+          <p class="s-total">總價：<label id="total5"></label></p>
+        </div>
+
+        <div class="cart-text">
+          <div class="product">
+            <img src="../image/bg6.jpg">
+            <div class="name">Rummikub</div>
+          </div>
+
+          <div class="price">$590</div>
+          <input id="min6" name="" type="button" value="-" />
+          <input id="quantity6" name="" type="text" value="0" />
+          <input id="add6" name="" type="button" value="+" />
+          <p class="s-total">總價：<label id="total6"></label></p>
+        </div>
 
       </div>
-      <button input type="submit" class="cart-step1"><a href="shoppingcart2.html" style="text-decoration: none; color: #454cb3;">下一步:確認付款資訊</a></button>
+      <p class="s-all">total:<label id="all-total"></label></p>
+      <button input type="submit" class="cart-step1"><a href="shoppingcart2.html"
+          style="text-decoration: none; color: #454cb3;">下一步:確認付款資訊</a></button>
     </div>
 
     <footer>©COPYRIGHT:GAMEROOM.COM</footer>

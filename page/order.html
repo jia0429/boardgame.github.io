@@ -9,55 +9,110 @@
 </head>
 
 <body>
-<div class="wrapper">
-  <header class="header">
-    <h2>GAMEROOM.COM</h2>
-    <img src="../image/search.jpg" class="search-logo">
-    <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
-    <ul class="menu">
-      <li><a href="../index.html">
-          <div class="underline">首頁</div>
-        </a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">商品區</a>
-        <div class="dropdown-content">
-          <a href="../page/allbg.html">所有桌遊</a>
-          <a href="../page/bgless.html">少人桌遊</a>
-          <a href="../page/bgmore.html">多人桌遊</a>
-        </div>
-      </li>
-      <li><a href="../page/shoppingcart1.html">購物車</a></li>
-      <li><a href="../page/aboutus.html">關於我們</a></li>
-      <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
-        <div class="dropdown-content">
-          <a href="../page/sign.html">登入/註冊</a>
-          <a href="../page/revise.html">修改資料</a>
-          <a href="../page/order.html">我的訂單</a>
-        </div>
-      </li>
-    </ul>
-  
-  </header>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
-  <script>
-    var mybutton = document.getElementById("myBtn");
+  <div class="wrapper">
+    <header class="header">
+      <h2>GAMEROOM.COM</h2>
+      <img src="../image/search.jpg" class="search-logo">
+      <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <ul class="menu">
+        <li><a href="../index.html">
+            <div class="underline">首頁</div>
+          </a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">商品區</a>
+          <div class="dropdown-content">
+            <a href="../page/allbg.html">所有桌遊</a>
+            <a href="../page/bgless.html">少人桌遊</a>
+            <a href="../page/bgmore.html">多人桌遊</a>
+          </div>
+        </li>
+        <li><a href="../page/shoppingcart1.html">購物車</a></li>
+        <li><a href="../page/aboutus.html">關於我們</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
+          <div class="dropdown-content">
+            <a href="../page/sign.html">登入/註冊</a>
+            <a href="../page/revise.html">修改資料</a>
+            <a href="../page/order.html">我的訂單</a>
+          </div>
+        </li>
+      </ul>
 
-    window.onscroll = function () { scrollFunction() };
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
       }
-    }
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <footer>hi</footer>
-</div>
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <img src="../image/order.jpg" class="order-img">
+    <table class="item">
+      <tr>
+        <td>商品</td>
+        <td>單價</td>
+        <td>數量</td>
+        <td>總價</td>
+      </tr>
+      <tr>
+        <td><img src="../image/bg1.jpg" class="bg1">
+          <p>狼人殺</p>
+        </td>
+        <td>$450</td>
+        <td>1</td>
+        <td>$450</td>
+      </tr>
+      <tr>
+        <td><img src="../image/bg2.jpg" class="bg1">
+          <p>阿瓦隆</p>
+        </td>
+        <td>$495</td>
+        <td>1</td>
+        <td>$495</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <p class="total">Total:$945</p>
+        </td>
+      </tr>
+    </table>
+    <table class="member">
+      <tr>
+        <td colspan="2">買家資訊</td>
+      </tr>
+      <tr>
+        <td>姓名</td>
+        <td>陳小美</td>
+      </tr>
+      <tr>
+        <td>電話</td>
+        <td>0987287287</td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td>beauty88@gmail.com</td>
+      </tr>
+      <tr>
+        <td>收件地址</td>
+        <td>320桃園市中壢區中北路200號</td>
+      </tr>
+    </table>
+
+    <footer>hi</footer>
+  </div>
 </body>
 
 </html>
