@@ -1,60 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>阿瓦隆</title>
   <link rel="stylesheet" type="text/css" href="../css/bg2.css">
 </head>
+
 <body>
-<div class="wrapper">
-<header class="header">
-  <h2>GAMEROOM.COM</h2>
-  <img src="../image/search.jpg" class="search-logo">
-  <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
-  <ul class="menu">
-    <li><a href="../index.html">
-        <div class="underline">首頁</div>
-      </a></li>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">商品區</a>
-      <div class="dropdown-content">
-        <a href="../page/allbg.html">所有桌遊</a>
-        <a href="../page/bgless.html">少人桌遊</a>
-        <a href="../page/bgmore.html">多人桌遊</a>
+  <div class="wrapper">
+    <header class="header">
+      <h2>GAMEROOM.COM</h2>
+      <img src="../image/search.jpg" class="search-logo">
+      <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <ul class="menu">
+        <li><a href="../index.html">
+            <div class="underline">首頁</div>
+          </a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">商品區</a>
+          <div class="dropdown-content">
+            <a href="../page/allbg.html">所有桌遊</a>
+            <a href="../page/bgless.html">少人桌遊</a>
+            <a href="../page/bgmore.html">多人桌遊</a>
+          </div>
+        </li>
+        <li><a href="../page/shoppingcart1.html">購物車</a></li>
+        <li><a href="../page/aboutus.html">關於我們</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
+          <div class="dropdown-content">
+            <a href="../page/sign.html">登入/註冊</a>
+            <a href="../page/revise.html">修改資料</a>
+            <a href="../page/order.html">我的訂單</a>
+          </div>
+        </li>
+      </ul>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="../image/bg2.jpg " style="width:300px; height: 400px; margin-left: 13%">
       </div>
-    </li>
-    <li><a href="../page/shoppingcart1.html">購物車</a></li>
-    <li><a href="../page/aboutus.html">關於我們</a></li>
-    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
-      <div class="dropdown-content">
-        <a href="../page/sign.html">登入/註冊</a>
-        <a href="../page/revise.html">修改資料</a>
-        <a href="../page/order.html">我的訂單</a>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="../image/bg2-2.png" style="width:500px; height: 400px; margin-left: 2.6%;">
       </div>
-    </li>
-  </ul>
 
-</header>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
-<script>
-  var mybutton = document.getElementById("myBtn");
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="../image/bg2-3.jpg" style="width:550px; height: 400px;">
+      </div>
 
-  window.onscroll = function () { scrollFunction() };
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="../image/bg2-4.jpg" style="width:500px; height: 400px; margin-left: 2.6%;">
+      </div>
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-  <footer>hi</footer>
-</div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="../image/bg2.jpg" style="width:100px" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../image/bg2-2.png" style="width:100px" onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../image/bg2-3.jpg" style="width:100px" onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../image/bg2-4.jpg" style="width:100px" onclick="currentSlide(4)">
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+      }
+    </script>
+
+    <footer>hi</footer>
+  </div>
 </body>
+
 </html>

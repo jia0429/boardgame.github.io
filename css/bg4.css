@@ -1,4 +1,5 @@
 @import url(../css/index.css);
+
 /*footer*/
 footer {
   height: 100px;
@@ -13,3 +14,91 @@ footer {
 }
 
 /*footer*/
+img {
+  vertical-align: middle;
+  margin: auto;
+}
+
+.container {
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  width: 50%;
+
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #128571;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px 5px 5px 5px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 400px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #9bc3dde7;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 8px;
+  position: absolute;
+  top: 0;
+  margin-left: 27%;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
