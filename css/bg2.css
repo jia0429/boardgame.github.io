@@ -1,19 +1,5 @@
 @import url(../css/index.css);
 
-/*footer*/
-footer {
-  height: 100px;
-  background-color: #dfe7fd;
-  bottom: 0;
-  width: 100%;
-  margin-top: 1500px;
-  text-align: center;
-  font-size: 25px;
-  font-family: Comic Sans MS;
-  color: #128571;
-}
-
-/*footer*/
 img {
   vertical-align: middle;
   margin: auto;
@@ -102,3 +88,219 @@ img {
 .demo:hover {
   opacity: 1;
 }
+
+/*text*/
+.bg-title {
+  position: absolute;
+  right: 22.1%;
+  top: 20%;
+  color: #116355;
+}
+
+.bg-sale {
+  position: absolute;
+  right: 35%;
+  top: 37%;
+  font-size: 23px;
+  color: #116355;
+  padding-left: 10px;
+  border-left: 4px solid #286d61;
+  line-height: 45px;
+}
+
+
+.money {
+  position: absolute;
+  right: 37.5%;
+  top: 57%;
+  font-size: 35px;
+  color: #ff2626fb;
+
+}
+
+.bg-number {
+  position: absolute;
+  right: 30%;
+  top: 73%;
+  font-size: 28px;
+  color: #116355;
+}
+
+#bg-min,
+#bg-add {
+  width: 40px;
+  height: 42px;
+  font-size: 30px;
+  background-color: #71c1cfb7;
+  border-radius: 15px;
+  color: #0e597c;
+}
+
+#bg-quantity {
+  width: 130px;
+  height: 40px;
+  font-size: 25px;
+  background-color: #81dae054;
+  border-radius: 10px;
+}
+
+.bg-sent {
+  position: absolute;
+  right: 18%;
+  top: 80%;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  font-size: 25px;
+  color: #220ba5;
+  background-color: #99cfd354;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.bg-sent:hover {
+  background-color: #a7506d8a;
+}
+
+.last-bg {
+  position: absolute;
+  left: 13%;
+  top: 88%;
+  font-size: 22px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #b2b5b641;
+}
+
+.next-bg {
+  position: absolute;
+  left: 36%;
+  top: 88%;
+  font-size: 22px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #b2b5b641;
+}
+
+.last-bg:hover,
+.next-bg:hover {
+  background-color: #83ddbf6b;
+}
+
+/*information*/
+
+.part-tab {
+  position: absolute;
+  top: 105%;
+  left: 13%;
+  width: 70%;
+}
+
+.bg-tab {
+  overflow: hidden;
+  border-top: 1px solid #1f5879b2;
+  border-bottom: 1px solid #1f5879b2;
+  background-color: #f3f4f700;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+}
+
+.tablinks {
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 183px 18px 183px;
+  transition: 0.3s;
+  font-size: 18px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  color: #116355;
+  background-color: #FFFFFF;
+}
+
+
+.tablinks:hover {
+  background-color: #78a3cc;
+}
+
+
+.tablinks.active {
+  background-color: #aecddfda;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  -webkit-animation: fadeEffect 1.5s;
+  animation: fadeEffect 1.5s;
+  font-size: 20px;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*part-tab video*/
+.bg-v1 {
+  position: absolute;
+  left: 25%;
+  top: 50px;
+  padding: 40px;
+}
+
+.bg-v2 {
+  position: absolute;
+  left: 25%;
+  top: 400px;
+  padding: 40px;
+}
+
+/*footer*/
+footer {
+  height: 100px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1800px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  color: #128571;
+}
+
+/*footer*/

@@ -48,8 +48,12 @@ fieldset {
   cursive;
   color: #454cb3;
   background-color: #e2d16f7e;
-  border: 1px solid #8d966252;
+  border:none;
   border-radius: 20px;
+}
+
+.cart-step2:hover {
+  background-color: #b9d6d652;
 }
 /*footer*/
 footer {

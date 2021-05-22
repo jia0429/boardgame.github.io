@@ -35,6 +35,11 @@ top:15%;
   Comic Sans,
   cursive;
   border-radius: 6%;
+  cursor: pointer;
+}
+
+.joinus:hover,.sign:hover{
+  background-color: #e3ecc3d0;
 }
 /*footer*/
 footer {

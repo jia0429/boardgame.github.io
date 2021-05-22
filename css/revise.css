@@ -29,8 +29,11 @@ fieldset {
     Comic Sans,
     cursive;
   border-radius: 6%;
+  cursor: pointer;
 }
-
+.revise:hover {
+  background-color: #e3ecc3d0;
+}
 /*footer*/
 footer {
   height: 100px;

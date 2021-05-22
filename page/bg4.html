@@ -12,8 +12,14 @@
   <div class="wrapper">
     <header class="header">
       <h2>GAMEROOM.COM</h2>
-      <img src="../image/search.jpg" class="search-logo">
-      <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <div class="topnav">
+        <div class="search-container">
+      
+          <input type="text" placeholder="搜尋.." name="search">
+          <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
+      </div>
+        </div>
+      <a href="page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
       <ul class="menu">
         <li><a href="../index.html">
             <div class="underline">首頁</div>
@@ -140,6 +146,82 @@
 
       }
     </script>
+    <div class="other-bg">
+      <button class="last-bg"><a href="bg3.html" style="text-decoration: none; color: #454cb3;">上一個商品</a></button>
+      <button class="next-bg"><a href="bg5.html" style="text-decoration: none; color: #454cb3;">下一個商品</a></button>
+    </div>
+    <div class="bg1-text">
+      <p>
+      <h1 class="bg-title">【簡易版吹牛小品】德國蟑螂桌遊</h1>
+      </p>
+      <div class="bg-sale">全館滿$599免運費<br>全館商品買三送一<br></div>
+      <div class="money">NT$440</div>
+    
+      <div class="bg-number">數量:&nbsp;<input id="bg-min" name="" type="button" value="-" />
+        <input id="bg-quantity" name="" type="text" value="0" />
+        <input id="bg-add" name="" type="button" value="+" /></div>
+    
+      <div><button class="bg-sent">加入購物車</button></div>
+    </div>
+        <div class="part-tab">
+          <div class="bg-tab">
+            <button class="tablinks" onclick="openProduct(event, 'Information')" id="defaultOpen">商品規格</button>
+            <button class="tablinks" onclick="openProduct(event, 'Star')">商品評價</button>
+            <button class="tablinks" onclick="openProduct(event, 'Recommend')">相關資訊</button>
+          </div>
+        
+          <div id="Information" class="tabcontent">
+            <p>商品名稱:德國蟑螂 KAKERLAKEN POKER</p>
+            <p>遊戲類型: 卡牌、派對、心機</p>
+            <p>遊戲年齡：8歲以上</p>
+            <p>遊戲時間：15分鐘~25分鐘</p>
+            <p>遊戲人數：2~6人</p>
+            <p>配件:卡牌 x64</p>
+            <p>遊戲資訊:你可以在遊戲中盡情蒙騙你的朋友們！</p>
+            <p>將牌傳遞給其它人時，用你的表情、聲調和動作讓他們摸不清你到底有沒有說謊，讓他們猜錯並收集到很多張牌！</p>
+            <p>收集到4張相同的動物就輸囉！</p>
+            <p>每張牌都代表真正的蟲蟲，在這個遊戲裡，玩家們可以口是心非，如果不相信對方，就得擔負把牌全部收回的重責大任～</p>
+            <p>這是一個超級無厘頭「吹牛」的紙牌遊戲，在德國通稱「德國蟑螂牌」，</p>
+            <p>受歡迎的程度遠超過傳統吹牛骰「BLUFF」，不但互動性佳，多人遊戲超歡樂，</p>
+            <p>且紙牌上的美工設計，把每個蟲蟲的角度刻畫精細，極富教育意義。</p>
+          </div>
+        
+          <div id="Star" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          </div>
+        
+          <div id="Recommend" class="tabcontent">
+            <div class="bg-v1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yksUvY0Dnj8" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="bg-v2">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/eXXAJHziksM" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <script>
+          function openProduct(evt, ProductName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(ProductName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+        </script>
     <footer>hi</footer>
   </div>
 </body>

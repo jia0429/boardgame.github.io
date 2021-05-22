@@ -12,8 +12,14 @@
   <div class="wrapper">
     <header class="header">
       <h2>GAMEROOM.COM</h2>
-      <img src="../image/search.jpg" class="search-logo">
-      <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <div class="topnav">
+        <div class="search-container">
+      
+          <input type="text" placeholder="搜尋.." name="search">
+          <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
+      </div>
+        </div>
+      <a href="page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
       <ul class="menu">
         <li><a href="../index.html">
             <div class="underline">首頁</div>
@@ -140,6 +146,82 @@
 
       }
     </script>
+    <div class="other-bg">
+      <button class="last-bg"><a href="bg5.html" style="text-decoration: none; color: #454cb3;">上一個商品</a></button>
+      <button class="next-bg"><a href="bg1.html" style="text-decoration: none; color: #454cb3;">下一個商品</a></button>
+    </div>
+    <div class="bg1-text">
+      <p>
+      <h1 class="bg-title">【Rummikub】拉密桌遊[普及版]</h1>
+      </p>
+      <div class="bg-sale">全館滿$599免運費<br>全館商品買三送一<br></div>
+      <div class="money">NT$590</div>
+    
+      <div class="bg-number">數量:&nbsp;<input id="bg-min" name="" type="button" value="-" />
+        <input id="bg-quantity" name="" type="text" value="0" />
+        <input id="bg-add" name="" type="button" value="+" /></div>
+    
+      <div><button class="bg-sent">加入購物車</button></div>
+    </div>
+        <div class="part-tab">
+          <div class="bg-tab">
+            <button class="tablinks" onclick="openProduct(event, 'Information')" id="defaultOpen">商品規格</button>
+            <button class="tablinks" onclick="openProduct(event, 'Star')">商品評價</button>
+            <button class="tablinks" onclick="openProduct(event, 'Recommend')">相關資訊</button>
+          </div>
+        
+          <div id="Information" class="tabcontent">
+            <p>商品名稱: 拉密(Rummikub)</p>
+            <p>遊戲類型: 策略、數字、燒腦</p>
+            <p>遊戲年齡：7歲以上</p>
+            <p>遊戲時間：20分鐘~30分鐘</p>
+            <p>遊戲人數：2~4人</p>
+            <p>配件:塑膠拉密牌 x106、牌架 x4</p>
+            <p>遊戲資訊:拉密遊戲是一個能激發您思考神經的遊戲，因為它不太靠運氣，卻需要您運用很多的策略。因此除了娛樂性外，尚具有以下極高的教育目標：</p>
+            <p>1. 排列組合能力 — 學習數字和顏色的最佳排列組合</p>
+            <p>2. 創新規劃能力 — 培養能不受限於所面對的現有牌局，重新規劃新的牌局組合</p>
+            <p>3. 決斷分析能力 — 訓練在短時間內，做出正確的出牌和操作牌的能力</p>
+            <p>拉密遊戲所以受歡迎的原因是它能打破語言的屏障，雖然它的說明書已被翻譯成26種不同的語言，但是此遊戲所包含的106個磚塊牌所代表的意義是全球共同了解的。</p>
+            <p>拉密的桌遊規則很簡單，玩家會輪流出牌，把桌面上的牌依照規則排成『順組』(連號同色)或是『群組』(同號不同色)，如果沒有手牌可以打出，就要抽一張新牌。</p>
+            <p>最先出完手牌的玩家獲得分數，遊戲會以積分制的方式，玩數輪後分數最高為贏家。</p>
+          </div>
+        
+          <div id="Star" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          </div>
+        
+          <div id="Recommend" class="tabcontent">
+            <div class="bg-v1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qIo7k0OQFLY" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            </div>
+            <div class="bg-v2">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SvOuSDYbiGU" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <script>
+          function openProduct(evt, ProductName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(ProductName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+        </script>
     <footer>hi</footer>
   </div>
 </body>

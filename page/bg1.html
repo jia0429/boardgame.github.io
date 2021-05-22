@@ -6,14 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>狼人殺</title>
   <link rel="stylesheet" type="text/css" href="../css/bg1.css">
+  <script type="text/javascript">
+    $(function () {
+      var t = $("#bg-quantity");
+      $("#bg-add").click(function () {
+        t.val(parseInt(t.val()) + 1);
+        $("#bg-min").removeAttr("disabled");
+      })
+      $("#bg-min").click(function () {
+        if (parseInt(t.val()) > 0) {
+          t.val(parseInt(t.val()) - 1)
+        } else {
+          $("#bg-min").attr("disabled", "disabled")
+        }
+      })
+    })
+  </script>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
       <h2>GAMEROOM.COM</h2>
-      <img src="../image/search.jpg" class="search-logo">
-      <a href="../page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <div class="topnav">
+        <div class="search-container">
+
+          <input type="text" placeholder="搜尋.." name="search">
+          <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
+        </div>
+      </div>
+      <a href="page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
       <ul class="menu">
         <li><a href="../index.html">
             <div class="underline">首頁</div>
@@ -140,9 +162,117 @@
 
       }
     </script>
+    <div class="other-bg">
+      <button class="last-bg"><a href="bg6.html" style="text-decoration: none; color: #454cb3;">上一個商品</a></button>
+      <button class="next-bg"><a href="bg2.html" style="text-decoration: none; color: #454cb3;">下一個商品</a></button>
+    </div>
+    <div class="bg1-text">
+      <p>
+      <h1 class="bg-title">【2019官方限定版】狼人殺桌遊</h1>
+      </p>
+      <div class="bg-sale">熱銷商品top1，限時特價<br>全館商品買三送一<br></div>
 
-    <footer>hi</footer>
+      <div class="money-o">NT$540</div>
+      <div class="money">NT$450</div>
+
+      <div class="bg-number">數量:&nbsp;<input id="bg-min" name="numbercar" type="button" value="-" />
+        <input id="bg-quantity" name="numbercar" type="text" value="0" />
+        <input id="bg-add" name="numbercar" type="button" value="+" /></div>
+
+      <div><button class="bg-sent">加入購物車</button></div>
+    </div>
+    <div class="part-tab">
+      <div class="bg-tab">
+        <button class="tablinks" onclick="openProduct(event, 'Information')" id="defaultOpen">商品規格</button>
+        <button class="tablinks" onclick="openProduct(event, 'Star')">商品評價</button>
+        <button class="tablinks" onclick="openProduct(event, 'Recommend')">相關資訊</button>
+      </div>
+
+      <div id="Information" class="tabcontent">
+        <p>商品名稱：狼人殺2019官方正版【繁體中文】</p>
+        
+        <p>遊戲類型: 陣營、猜心、推理、派對</p>
+        
+        <p>適合年齡：12歲以上</p>
+        
+        <p>遊戲時間：約50分鐘</p>
+        
+        <p>遊戲人數：8~18人</p>
+        
+        <p>配件：共56張牌</p>
+        
+        <p>語言：繁體中文</p>
+        
+        <p>遊戲資訊:《狼人殺》是一個簡單的遊戲，但極之考驗玩家的口才和思維。加上可容納多名的參加者，是一個非常受歡迎的派對遊戲。</p>
+        <p>遊戲中的玩家因應其身分，分別屬於兩個不同的群體：</p>
+        
+        <p>狼人及村民。狼人的目標是讓狼人及村民的數目相等。</p>
+        
+        <p>村民的目標就是寧枉勿縱，必須把所有狼人吊死。如何在言談間判斷出各人的身分。</p>
+        
+        <p>角色：平民6張、老流氓</p>
+        
+        <p>神職:白癡、盜賊、預言家、獵人、禁言長老、魔術師、女巫、訓熊師、野孩子、騎士、守衛、邱比特、攝夢人</p>
+        
+        <p>惡靈騎士、炸彈人、守墓人、烏鴉、獵魔人、隱狼、狼王、白狼王、狼美人、石像鬼、血月使徒，另有警長牌跟18張號碼牌。</p>
+     
+      </div>
+      <div id="Star" class="tabcontent">
+        這裡放假的星等1-5
+        下面放假的評論
+        <a href="javascript:void(0)"
+          onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><button
+            class="comment">撰寫評論</button></a>
+        <div id="light" class="write-comment">
+          <form>
+            <label for="name">姓名 name &nbsp;</label>
+            <input type="text" name="comment"  style="width: 300px;"><br><br>
+        
+            <label for="password">標題 title &nbsp;&nbsp;</label>
+            <input type="text" name="comment" style="width: 300px;"><br><br>
+            <label for="birthday">評論 comment &nbsp;</label>
+            <input type="textarea" name="comment" style="width: 300px ;height:200px;"><br><br>
+        
+            <input type="submit" value="送出評論" class="comment-submit">
+          </form>
+          <a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="nope">X</a>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+      </div>
+
+      <div id="Recommend" class="tabcontent">
+        <div class="bg-v1">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/QIH6KNFxyeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="bg-v2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d1dgcfK3280" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      </div>
+    </div>
+    <script>
+      function openProduct(evt, ProductName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(ProductName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
   </div>
+  <footer>hi</footer>
+
 </body>
 
 </html>
