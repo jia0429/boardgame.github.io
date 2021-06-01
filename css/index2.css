@@ -1,11 +1,12 @@
 @import url(index.css);
 
-.memo{
+.memo {
   position: absolute;
   width: 300px;
   right: 3%;
   top: 20%;
 }
+
 /*ad*/
 .coverflow {
   width: 100%;
@@ -90,20 +91,21 @@
 /*ad*/
 
 /*ad2*/
-.ad{
- position: absolute;
- top: 88.5%;
- left: 24%;
- max-width:1200px ;
+.ad {
+  position: absolute;
+  top: 88.5%;
+  left: 24%;
+  max-width: 1200px;
 }
 
-#run{
-  width:1000px;
+#run {
+  width: 1000px;
   height: 40px;
   font-size: 25px;
   background-color: #ebe967b9;
   color: #195a4f;
 }
+
 /*ad2*/
 .hotsale {
   width: 100%;
@@ -117,6 +119,7 @@
   top: 85%;
   left: 10%;
 }
+
 .top1 {
   width: auto;
   max-width: 1200px;
@@ -148,6 +151,7 @@
   top: 110%;
   left: 15%;
 }
+
 .h2-img {
   width: auto;
   max-width: 1200px;
@@ -164,11 +168,15 @@
   left: 65%;
 }
 
-.h1-img,.h2-img,.h3-img{
+.h1-img,
+.h2-img,
+.h3-img {
   border-radius: 25px;
 }
 
-.h1-img:hover,.h2-img:hover,.h3-img:hover{
+.h1-img:hover,
+.h2-img:hover,
+.h3-img:hover {
   opacity: 0.8;
 }
 
@@ -181,7 +189,9 @@ footer {
   margin-top: 1700px;
   text-align: center;
   font-size: 25px;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
   color: #128571;
 }
 

@@ -50,7 +50,9 @@ footer {
   margin-top: 900px;
   text-align: center;
   font-size: 25px;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS,
+  Comic Sans,
+  cursive;
   color: #128571;
 }
 

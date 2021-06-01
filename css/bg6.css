@@ -1,4 +1,5 @@
 @import url(../css/index.css);
+
 img {
   vertical-align: middle;
   margin: auto;
@@ -117,6 +118,14 @@ img {
 
 }
 
+.bg-amount {
+  position: absolute;
+  right: 38.4%;
+  top: 83%;
+  font-size: 28px;
+  color: #286d61;
+}
+
 .bg-number {
   position: absolute;
   right: 30%;
@@ -146,7 +155,7 @@ img {
 .bg-sent {
   position: absolute;
   right: 18%;
-  top: 80%;
+  top: 88%;
   font-family: Comic Sans MS,
     Comic Sans,
     cursive;
@@ -271,6 +280,206 @@ img {
     opacity: 1;
   }
 }
+
+/**/
+.comment {
+  position: absolute;
+  top: 150px;
+  right: 10%;
+  font-size: 28px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 5%;
+  background-color: #e2954ccb;
+  color: #192344;
+  cursor: pointer;
+}
+
+.comment:hover {
+  background-color: #cfc971b7;
+}
+
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #48494811;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.80;
+  filter: alpha(opacity=88);
+}
+
+.write-comment {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 410px;
+  height: 450px;
+  padding: 20px;
+  border: 5px solid #67d4b4c0;
+  border-radius: 10px;
+  background-color: #c3eed5;
+  z-index: 1002;
+  overflow: auto;
+  font-size: 22px;
+}
+
+
+.grade {
+  font-size: 0;
+  position: absolute;
+  top: 360px;
+  left: 20px;
+
+}
+
+.grade>label {
+  color: #9bc3dde7;
+  float: right;
+}
+
+.grade>label:before {
+  padding: 5px;
+  font-size: 50px;
+  line-height: 1em;
+  display: inline-block;
+  content: "★";
+}
+
+.grade>input:checked~label,
+.grade:not(:checked)>label:hover,
+.grade:not(:checked)>label:hover~label {
+  color: #e9ff70;
+}
+
+.grade>input:checked~label:hover,
+.grade>label:hover~input:checked~label,
+.grade>input:checked~label:hover~label {
+  opacity: 0.4;
+}
+
+
+.comment-submit {
+  position: absolute;
+  top: 85%;
+  right: 10%;
+  font-size: 20px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 5%;
+  background-color: #65e2b8d7;
+  color: #192344;
+  cursor: pointer;
+}
+
+.comment-submit:hover {
+  background-color: #71cccfb7;
+}
+
+.nope {
+  position: absolute;
+  top: 0.5%;
+  right: 3%;
+  text-decoration: none;
+  font-size: 28px;
+  color: #0e7254;
+  padding: 2px 5px 2px 5px;
+}
+
+.nope:hover {
+  background-color: #4d7aa56b;
+
+}
+
+.total_grade {
+  position: absolute;
+  top: 50px;
+  left: 130px;
+
+}
+
+
+.total_star {
+  position: absolute;
+  top: 110px;
+  left: 250px;
+}
+
+.ha {
+  border-left: 1px black solid;
+  list-style-type: none;
+  padding-left: 15px;
+  letter-spacing: 8px;
+  color: #e9ff70;
+}
+
+b {
+  color: black;
+}
+
+.clientpic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.client_info {
+  position: absolute;
+  top: 450px;
+  left: 60px;
+}
+
+
+
+.haha {
+
+  list-style-type: none;
+  padding-left: 15px;
+  letter-spacing: 8px;
+}
+
+.message {
+  position: absolute;
+  top: 330px;
+  left: 270px;
+  border-left: 1px black solid;
+}
+
+.clientpic-2 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-left: 70px;
+  margin-top: 10px;
+  position: absolute;
+  top: 550px;
+}
+
+.client_info-2 {
+  position: absolute;
+  top: 700px;
+  left: 60px;
+}
+
+.message-2 {
+  position: absolute;
+  top: 590px;
+  left: 270px;
+  border-left: 1px black solid;
+}
+/**/
 
 /*part-tab video*/
 .bg-v1 {

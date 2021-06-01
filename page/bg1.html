@@ -174,7 +174,7 @@
 
       <div class="money-o">NT$540</div>
       <div class="money">NT$450</div>
-
+      <div class="bg-amount">庫存數量:5</div>
       <div class="bg-number">數量:&nbsp;<input id="bg-min" name="numbercar" type="button" value="-" />
         <input id="bg-quantity" name="numbercar" type="text" value="0" />
         <input id="bg-add" name="numbercar" type="button" value="+" /></div>
@@ -190,66 +190,119 @@
 
       <div id="Information" class="tabcontent">
         <p>商品名稱：狼人殺2019官方正版【繁體中文】</p>
-        
+
         <p>遊戲類型: 陣營、猜心、推理、派對</p>
-        
+
         <p>適合年齡：12歲以上</p>
-        
+
         <p>遊戲時間：約50分鐘</p>
-        
+
         <p>遊戲人數：8~18人</p>
-        
+
         <p>配件：共56張牌</p>
-        
+
         <p>語言：繁體中文</p>
-        
+
         <p>遊戲資訊:《狼人殺》是一個簡單的遊戲，但極之考驗玩家的口才和思維。加上可容納多名的參加者，是一個非常受歡迎的派對遊戲。</p>
         <p>遊戲中的玩家因應其身分，分別屬於兩個不同的群體：</p>
-        
+
         <p>狼人及村民。狼人的目標是讓狼人及村民的數目相等。</p>
-        
+
         <p>村民的目標就是寧枉勿縱，必須把所有狼人吊死。如何在言談間判斷出各人的身分。</p>
-        
+
         <p>角色：平民6張、老流氓</p>
-        
+
         <p>神職:白癡、盜賊、預言家、獵人、禁言長老、魔術師、女巫、訓熊師、野孩子、騎士、守衛、邱比特、攝夢人</p>
-        
+
         <p>惡靈騎士、炸彈人、守墓人、烏鴉、獵魔人、隱狼、狼王、白狼王、狼美人、石像鬼、血月使徒，另有警長牌跟18張號碼牌。</p>
-     
+
       </div>
       <div id="Star" class="tabcontent">
-        這裡放假的星等1-5
-        下面放假的評論
         <a href="javascript:void(0)"
           onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><button
             class="comment">撰寫評論</button></a>
         <div id="light" class="write-comment">
           <form>
             <label for="name">姓名 name &nbsp;</label>
-            <input type="text" name="comment"  style="width: 300px;"><br><br>
-        
+            <input type="text" name="comment" style="width: 300px;"><br><br>
+
             <label for="password">標題 title &nbsp;&nbsp;</label>
             <input type="text" name="comment" style="width: 300px;"><br><br>
             <label for="birthday">評論 comment &nbsp;</label>
             <input type="textarea" name="comment" style="width: 300px ;height:200px;"><br><br>
-        
+            <!---->
+            <div class="grade">
+              <input type="radio" id="star5" name="grade" value="5" hidden />
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="grade" value="4" hidden />
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="grade" value="3" hidden />
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="grade" value="2" hidden />
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="grade" value="1" hidden />
+              <label for="star1"></label>
+
+            </div>
+            <!---->
             <input type="submit" value="送出評論" class="comment-submit">
           </form>
           <a href="javascript:void(0)"
-            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="nope">X</a>
+            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+            class="nope">X</a>
         </div>
         <div id="fade" class="black_overlay"></div>
+        <div class="total_grade">
+          <p style="font-size: 60px; margin-bottom:-20px;">5/5</p>
+          <p>共2則評論</p>
+        </div>
+        <div class="total_star">
+          <li class="ha">★★★★★<b>(2)</b></li><br />
+          <li class="ha">★★★★☆<b>(0)</b></li><br />
+          <li class="ha">★★★☆☆<b>(0)</b></li><br />
+          <li class="ha">★★☆☆☆<b>(0)</b></li><br />
+          <li class="ha">★☆☆☆☆<b>(0)</b></li>
+        </div>
+        <hr style="margin-top:200px; margin-left: auto;">
+        <div>
+          <img src="../image/komimi.png" class="clientpic">
+          <div class="client_info">
+            <li class="haha">Komimizuk</li><br />
+            <li class="haha">★★★★★</li>
+          </div>
+        </div>
+        <div class="message">
+          <p style="font-size: 30px; margin-left: 30px;">我給5顆星！！</p>
+          <p style="font-size: 20px; margin-left: 30px;">愛了愛了，到貨速度有夠快~~</p>
+        </div>
+        <div>
+
+          <img src="../image/fakesmile.jpg" class="clientpic-2">
+          <div class="client_info-2">
+            <li class="haha">simlemeow</li><br />
+            <li class="haha">★★★★★</li>
+          </div>
+        </div>
+        <div class="message-2">
+          <p style="font-size: 30px; margin-left: 30px;">當然是5顆星！</p>
+          <p style="font-size: 20px; margin-left: 30px;">我好喜歡狼人殺呀！快來跟我一起玩吧親</p>
+        </div>
+        <hr style="margin-top:100px; margin-left: auto;">
       </div>
 
       <div id="Recommend" class="tabcontent">
         <div class="bg-v1">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/QIH6KNFxyeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="bg-v2">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/d1dgcfK3280" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QIH6KNFxyeY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="bg-v2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/d1dgcfK3280" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
     </div>
     <script>
@@ -271,7 +324,11 @@
       document.getElementById("defaultOpen").click();
     </script>
   </div>
-  <footer>hi</footer>
+  <footer>
+    Copyright:GAMEROOM.COM <br>
+    Tel:+886912568749 <br>
+    訪客人數:6666人
+  </footer>
 
 </body>
 

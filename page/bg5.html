@@ -157,7 +157,7 @@
       <div class="bg-sale">全館滿$599免運費<br>全館商品買三送一<br></div>
 
       <div class="money">NT$1160</div>
-
+      <div class="bg-amount">庫存數量:5</div>
       <div class="bg-number">數量:&nbsp;<input id="bg-min" name="" type="button" value="-" />
         <input id="bg-quantity" name="" type="text" value="0" />
         <input id="bg-add" name="" type="button" value="+" /></div>
@@ -191,20 +191,90 @@
       </div>
 
       <div id="Star" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
+        <a href="javascript:void(0)"
+          onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><button
+            class="comment">撰寫評論</button></a>
+        <div id="light" class="write-comment">
+          <form>
+            <label for="name">姓名 name &nbsp;</label>
+            <input type="text" name="comment" style="width: 300px;"><br><br>
+
+            <label for="password">標題 title &nbsp;&nbsp;</label>
+            <input type="text" name="comment" style="width: 300px;"><br><br>
+            <label for="birthday">評論 comment &nbsp;</label>
+            <input type="textarea" name="comment" style="width: 300px ;height:200px;"><br><br>
+
+            <div class="grade">
+              <input type="radio" id="star5" name="grade" value="5" hidden />
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="grade" value="4" hidden />
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="grade" value="3" hidden />
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="grade" value="2" hidden />
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="grade" value="1" hidden />
+              <label for="star1"></label>
+
+            </div>
+
+            <input type="submit" value="送出評論" class="comment-submit">
+          </form>
+          <a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+            class="nope">X</a>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+        <div class="total_grade">
+          <p style="font-size: 60px; margin-bottom:-20px;">5/5</p>
+          <p>共2則評論</p>
+        </div>
+        <div class="total_star">
+          <li class="ha">★★★★★<b>(2)</b></li><br />
+          <li class="ha">★★★★☆<b>(0)</b></li><br />
+          <li class="ha">★★★☆☆<b>(0)</b></li><br />
+          <li class="ha">★★☆☆☆<b>(0)</b></li><br />
+          <li class="ha">★☆☆☆☆<b>(0)</b></li>
+        </div>
+        <hr style="margin-top:200px; margin-left: auto;">
+        <div>
+          <img src="../image/komimi.png" class="clientpic">
+          <div class="client_info">
+            <li class="haha">Komimizuk</li><br />
+            <li class="haha">★★★★★</li>
+          </div>
+        </div>
+        <div class="message">
+          <p style="font-size: 30px; margin-left: 30px;">我給5顆星！！</p>
+          <p style="font-size: 20px; margin-left: 30px;">愛了愛了，到貨速度有夠快~~</p>
+        </div>
+        <div>
+
+          <img src="../image/fakesmile.jpg" class="clientpic-2">
+          <div class="client_info-2">
+            <li class="haha">simlemeow</li><br />
+            <li class="haha">★★★★★</li>
+          </div>
+        </div>
+        <div class="message-2">
+          <p style="font-size: 30px; margin-left: 30px;">當然是5顆星！</p>
+          <p style="font-size: 20px; margin-left: 30px;">我好喜歡狼人殺呀！快來跟我一起玩吧親</p>
+        </div>
+        <hr style="margin-top:100px; margin-left: auto;">
       </div>
 
       <div id="Recommend" class="tabcontent">
         <div class="bg-v1">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gfbeG5au_bo" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gfbeG5au_bo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
         <div class="bg-v2">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JgHzUUFT-Ms" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JgHzUUFT-Ms" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -226,7 +296,11 @@
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
     </script>
-    <footer>hi</footer>
+      <footer>
+    Copyright:GAMEROOM.COM <br>
+    Tel:+886912568749 <br>
+    訪客人數:6666人
+  </footer>
   </div>
 </body>
 

@@ -1,18 +1,4 @@
 
-/*footer*/
-footer {
-  height: 100px;
-  background-color: #dfe7fd;
-  bottom: 0;
-  width: 100%;
-  margin-top: 900px;
-  text-align: center;
-  font-size: 25px;
-  font-family: Comic Sans MS;
-  color: #128571;
-}
-
-/*footer*/
 .aboutus {
   font-size: 40px;
   font-weight: 800;
@@ -395,3 +381,20 @@ li.dropdown {
   opacity: 0.8;
 }
 /*gotop*/
+
+/*footer*/
+footer {
+  height: 100px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 900px;
+  text-align: center;
+  font-size: 25px;
+   font-family: Comic Sans MS,
+   Comic Sans,
+   cursive;
+  color: #128571;
+}
+
+/*footer*/

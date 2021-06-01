@@ -4,20 +4,7 @@
   top: 8%;
   left: 15%;
 }
-/*footer*/
-footer {
-  height: 100px;
-  background-color: #dfe7fd;
-  bottom: 0;
-  width: 100%;
-  margin-top: 1500px;
-  text-align: center;
-  font-size: 25px;
-  font-family: Comic Sans MS;
-  color: #128571;
-}
 
-/*footer*/
 tr:nth-child(1) {
   background-color: #a2d2ff;
 }
@@ -67,3 +54,19 @@ tr {
   color: #3d7d8d;
 
 }
+/*footer*/
+footer {
+  height: 100px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1500px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS,
+  Comic Sans,
+  cursive;
+  color: #128571;
+}
+
+/*footer*/

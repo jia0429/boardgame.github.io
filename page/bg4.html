@@ -14,11 +14,11 @@
       <h2>GAMEROOM.COM</h2>
       <div class="topnav">
         <div class="search-container">
-      
+
           <input type="text" placeholder="搜尋.." name="search">
           <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
-      </div>
         </div>
+      </div>
       <a href="page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
       <ul class="menu">
         <li><a href="../index.html">
@@ -156,73 +156,147 @@
       </p>
       <div class="bg-sale">全館滿$599免運費<br>全館商品買三送一<br></div>
       <div class="money">NT$440</div>
-    
+      <div class="bg-amount">庫存數量:5</div>
       <div class="bg-number">數量:&nbsp;<input id="bg-min" name="" type="button" value="-" />
         <input id="bg-quantity" name="" type="text" value="0" />
         <input id="bg-add" name="" type="button" value="+" /></div>
-    
+
       <div><button class="bg-sent">加入購物車</button></div>
     </div>
-        <div class="part-tab">
-          <div class="bg-tab">
-            <button class="tablinks" onclick="openProduct(event, 'Information')" id="defaultOpen">商品規格</button>
-            <button class="tablinks" onclick="openProduct(event, 'Star')">商品評價</button>
-            <button class="tablinks" onclick="openProduct(event, 'Recommend')">相關資訊</button>
-          </div>
-        
-          <div id="Information" class="tabcontent">
-            <p>商品名稱:德國蟑螂 KAKERLAKEN POKER</p>
-            <p>遊戲類型: 卡牌、派對、心機</p>
-            <p>遊戲年齡：8歲以上</p>
-            <p>遊戲時間：15分鐘~25分鐘</p>
-            <p>遊戲人數：2~6人</p>
-            <p>配件:卡牌 x64</p>
-            <p>遊戲資訊:你可以在遊戲中盡情蒙騙你的朋友們！</p>
-            <p>將牌傳遞給其它人時，用你的表情、聲調和動作讓他們摸不清你到底有沒有說謊，讓他們猜錯並收集到很多張牌！</p>
-            <p>收集到4張相同的動物就輸囉！</p>
-            <p>每張牌都代表真正的蟲蟲，在這個遊戲裡，玩家們可以口是心非，如果不相信對方，就得擔負把牌全部收回的重責大任～</p>
-            <p>這是一個超級無厘頭「吹牛」的紙牌遊戲，在德國通稱「德國蟑螂牌」，</p>
-            <p>受歡迎的程度遠超過傳統吹牛骰「BLUFF」，不但互動性佳，多人遊戲超歡樂，</p>
-            <p>且紙牌上的美工設計，把每個蟲蟲的角度刻畫精細，極富教育意義。</p>
-          </div>
-        
-          <div id="Star" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-          </div>
-        
-          <div id="Recommend" class="tabcontent">
-            <div class="bg-v1">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/yksUvY0Dnj8" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+    <div class="part-tab">
+      <div class="bg-tab">
+        <button class="tablinks" onclick="openProduct(event, 'Information')" id="defaultOpen">商品規格</button>
+        <button class="tablinks" onclick="openProduct(event, 'Star')">商品評價</button>
+        <button class="tablinks" onclick="openProduct(event, 'Recommend')">相關資訊</button>
+      </div>
+
+      <div id="Information" class="tabcontent">
+        <p>商品名稱:德國蟑螂 KAKERLAKEN POKER</p>
+        <p>遊戲類型: 卡牌、派對、心機</p>
+        <p>遊戲年齡：8歲以上</p>
+        <p>遊戲時間：15分鐘~25分鐘</p>
+        <p>遊戲人數：2~6人</p>
+        <p>配件:卡牌 x64</p>
+        <p>遊戲資訊:你可以在遊戲中盡情蒙騙你的朋友們！</p>
+        <p>將牌傳遞給其它人時，用你的表情、聲調和動作讓他們摸不清你到底有沒有說謊，讓他們猜錯並收集到很多張牌！</p>
+        <p>收集到4張相同的動物就輸囉！</p>
+        <p>每張牌都代表真正的蟲蟲，在這個遊戲裡，玩家們可以口是心非，如果不相信對方，就得擔負把牌全部收回的重責大任～</p>
+        <p>這是一個超級無厘頭「吹牛」的紙牌遊戲，在德國通稱「德國蟑螂牌」，</p>
+        <p>受歡迎的程度遠超過傳統吹牛骰「BLUFF」，不但互動性佳，多人遊戲超歡樂，</p>
+        <p>且紙牌上的美工設計，把每個蟲蟲的角度刻畫精細，極富教育意義。</p>
+      </div>
+
+      <div id="Star" class="tabcontent">
+        <a href="javascript:void(0)"
+          onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><button
+            class="comment">撰寫評論</button></a>
+        <div id="light" class="write-comment">
+          <form>
+            <label for="name">姓名 name &nbsp;</label>
+            <input type="text" name="comment" style="width: 300px;"><br><br>
+
+            <label for="password">標題 title &nbsp;&nbsp;</label>
+            <input type="text" name="comment" style="width: 300px;"><br><br>
+            <label for="birthday">評論 comment &nbsp;</label>
+            <input type="textarea" name="comment" style="width: 300px ;height:200px;"><br><br>
+
+            <div class="grade">
+              <input type="radio" id="star5" name="grade" value="5" hidden />
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="grade" value="4" hidden />
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="grade" value="3" hidden />
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="grade" value="2" hidden />
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="grade" value="1" hidden />
+              <label for="star1"></label>
+
             </div>
-            <div class="bg-v2">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/eXXAJHziksM" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
+
+            <input type="submit" value="送出評論" class="comment-submit">
+          </form>
+          <a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+            class="nope">X</a>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+        <div class="total_grade">
+          <p style="font-size: 60px; margin-bottom:-20px;">5/5</p>
+          <p>共2則評論</p>
+        </div>
+        <div class="total_star">
+          <li class="ha">★★★★★<b>(2)</b></li><br />
+          <li class="ha">★★★★☆<b>(0)</b></li><br />
+          <li class="ha">★★★☆☆<b>(0)</b></li><br />
+          <li class="ha">★★☆☆☆<b>(0)</b></li><br />
+          <li class="ha">★☆☆☆☆<b>(0)</b></li>
+        </div>
+        <hr style="margin-top:200px; margin-left: auto;">
+        <div>
+          <img src="../image/komimi.png" class="clientpic">
+          <div class="client_info">
+            <li class="haha">Komimizuk</li><br />
+            <li class="haha">★★★★★</li>
           </div>
         </div>
-        <script>
-          function openProduct(evt, ProductName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(ProductName).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
+        <div class="message">
+          <p style="font-size: 30px; margin-left: 30px;">我給5顆星！！</p>
+          <p style="font-size: 20px; margin-left: 30px;">愛了愛了，到貨速度有夠快~~</p>
+        </div>
+        <div>
 
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
-        </script>
-    <footer>hi</footer>
+          <img src="../image/fakesmile.jpg" class="clientpic-2">
+          <div class="client_info-2">
+            <li class="haha">simlemeow</li><br />
+            <li class="haha">★★★★★</li>
+          </div>
+        </div>
+        <div class="message-2">
+          <p style="font-size: 30px; margin-left: 30px;">當然是5顆星！</p>
+          <p style="font-size: 20px; margin-left: 30px;">我好喜歡狼人殺呀！快來跟我一起玩吧親</p>
+        </div>
+        <hr style="margin-top:100px; margin-left: auto;">
+      </div>
+
+      <div id="Recommend" class="tabcontent">
+        <div class="bg-v1">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yksUvY0Dnj8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="bg-v2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eXXAJHziksM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openProduct(evt, ProductName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(ProductName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+      <footer>
+    Copyright:GAMEROOM.COM <br>
+    Tel:+886912568749 <br>
+    訪客人數:6666人
+  </footer>
   </div>
 </body>
 
