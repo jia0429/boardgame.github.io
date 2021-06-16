@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台管理</title>
+    <link rel="stylesheet" type="text/css" href="../css/manager.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h2>GAMEROOM.COM</h2>
+            <div class="topnav">
+                <div class="search-container">
+
+                    <input type="text" placeholder="搜尋.." name="search">
+                    <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
+                </div>
+            </div>
+            <a href="../page/sign.html"> <img src="../image/user.png" class="user-logo"></a>
+            <ul class="menu">
+                <li><a href="../index.html">
+                        <div class="underline">首頁</div>
+                    </a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">商品區</a>
+                    <div class="dropdown-content">
+                        <a href="../page/allbg.html">所有桌遊</a>
+                        <a href="../page/bgless.html">少人桌遊</a>
+                        <a href="../page/bgmore.html">多人桌遊</a>
+                    </div>
+                </li>
+                <li><a href="../page/shoppingcart1.html">購物車</a></li>
+                <li><a href="../page/aboutus.html">關於我們</a></li>
+                <li><a href="../page/manager.html">後台管理</a></li>
+            </ul>
+
+        </header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <div class="tab">
+            <div class="t-text">
+                <img src="../image/manager.jpg" class="manager-img">
+                Hi！<br>
+                管理員您好！
+            </div>
+            <button class="tablinks" onclick="openManager(event, 'member')" id="defaultOpen">會員管理</button>
+            <button class="tablinks" onclick="openManager(event, 'product')">商品管理</button>
+            <button class="tablinks" onclick="openManager(event, 'sell')">出貨紀錄</button>
+            <button class="tablinks" onclick="openManager(event, 'comment')">留言板</button>
+        </div>
+
+        <div id="member" class="tabcontent">
+            <div class="manager-title">
+                會員管理<br>
+                ______________
+            </div>
+            <select name="member" class="member-name">
+                <option value="0">會員姓名</option>
+            </select>
+            <button name="select" class="member-select">選擇會員</button>
+            <button name="delete" class="member-delete">刪除會員</button>
+            <p class="member-information">姓名:<br>帳號:<br>密碼:<br>生日:<br></p>
+        </div>
+
+        <div id="product" class="tabcontent">
+            <div class="manager-title">
+                商品管理<br>
+                ______________
+            </div>
+            <table class="manager-product">
+                <tr>
+                    <th>商品編號</th>
+                    <th>名稱</th>
+                    <th>價格</th>
+                    <th>庫存</th>
+                    <th colspan="2">操作</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>狼人殺</td>
+                    <td>$450</td>
+                    <td>5</td>
+                    <td><img src="../image/pen.jpg"></td>
+                    <td><img src="../image/delete.png"></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>阿瓦隆</td>
+                    <td>$495</td>
+                    <td>5</td>
+                    <td><img src="../image/pen.jpg"></td>
+                    <td><img src="../image/delete.png"></td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>BANG！</td>
+                    <td>$740</td>
+                    <td>5</td>
+                    <td><img src="../image/pen.jpg"></td>
+                    <td><img src="../image/delete.png"></td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>德國蟑螂</td>
+                    <td>$440</td>
+                    <td>5</td>
+                    <td><img src="../image/pen.jpg"></td>
+                    <td><img src="../image/delete.png"></td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>妙語說書人</td>
+                    <td>$1160</td>
+                    <td>5</td>
+                    <td><img src="../image/pen.jpg"></td>
+                    <td><img src="../image/delete.png"></td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>Rummikub</td>
+                    <td>$590</td>
+                    <td>5</td>
+                    <td><img src="../image/pen.jpg"></td>
+                    <td><img src="../image/delete.png"></td>
+                </tr>
+            </table>
+
+            </table>
+        </div>
+
+        <div id="sell" class="tabcontent">
+            <div class="manager-title">
+                出貨紀錄<br>
+                ______________
+            </div>
+            <p class="manager-sell">購買者:<br>購買產品:<br>出貨時間:<br></p>
+        </div>
+        <div id="comment" class="tabcontent">
+            <div class="manager-title">
+                留言板<br>
+                ______________
+            </div>
+            <p class="manager-comment">留言者:<br>標題:<br>內容:<br>評價星等:<br></p>
+        </div>
+
+        <script>
+            function openManager(evt, managerName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(managerName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            document.getElementById("defaultOpen").click();
+        </script>
+
+
+        <footer>
+            訪客人數 : 6666人<br>
+            Copyright : GAMEROOM.COM <br>
+            E-mail : gameroom@gmail.com<br>
+            Tel : +886912568749
+            <p class="wellcome anim-typewriter">wellcome to GAMEROOM.COM！！</p>
+        </footer>
+    </div>
+</body>
+
+</html>

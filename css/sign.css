@@ -8,13 +8,13 @@ border-color: #18749956;
 
 .join-form{
 position: absolute;
-left: 11%;
+left: 13%;
 top:15%;
 }
 
 .sign-form{
   position: absolute;
-  left: 55%;
+  left: 54%;
   top:15%;
 }
 .join-text,.sign-text{
@@ -43,7 +43,7 @@ top:15%;
 }
 /*footer*/
 footer {
-  height: 100px;
+  height: 200px;
   background-color: #dfe7fd;
   bottom: 0;
   width: 100%;
@@ -56,4 +56,17 @@ footer {
   color: #128571;
 }
 
+.wellcome{
+  position: absolute;
+  top: 1100px;  
+  left: 40%;
+  border-right: 2px solid #ffffffbf;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%); 
+  width: 450px;   
+  color: #532a88;
+}
 /*footer*/

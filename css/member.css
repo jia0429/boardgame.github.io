@@ -1,0 +1,256 @@
+@import url(../css/index.css);
+
+* {box-sizing: border-box}
+/* tab */
+
+.beauty{
+  float: left;
+  padding: 10px;
+}
+.t-text{
+  color: #182f6ee3;
+  width: 250px;
+  height: auto;
+  font-size: 27px;
+}
+.tab {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  text-align: center;
+  border:none;
+  background-color: #d3f1fa4f;
+  width: 300px;
+  height: auto;
+  border-radius: 3px;
+}
+.tablinks {
+  display: block;
+  background-color: inherit;
+  text-align: center;
+  color: #6863b9;
+  padding: 22px 0 16px 0;
+  width: 300px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 26px;
+  font-family: Comic Sans MS,
+  Comic Sans,
+  cursive;
+  border-radius: 3px;
+}
+
+.tablinks:hover {
+  background-color: #87b0e071;
+}
+
+.tablinks.active {
+  background-color: #5298c085;
+}
+
+.tabcontent {
+  float: center;
+  padding: 0px 12px;
+  width: 70%;
+  border: none;
+  height: 20px;
+}
+
+/*tab */
+fieldset {
+  display: block;
+  min-inline-size: min-content;
+  width: 33%;
+  border-color: #18749956;
+}
+
+
+.member-form{
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  height: 470px;
+}
+
+.member-text{
+  text-align: left;
+  color: #2760ac;
+  font-size: 23px;
+  padding-left: 17px;
+}
+/*m-logo*/
+.m-logo{
+  position: absolute;
+  top: 68%;
+  right: 1%;
+}
+
+/* PULSE */
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.m-logo-pulse.animated,
+.m-logo-pulse.animated-hover:hover,
+.m-logo-parent.animated-hover:hover > .m-logo-pulse {
+  -webkit-animation: pulse 5s linear infinite;
+  animation: pulse 5s linear infinite;
+}
+
+
+/*m-logo*/
+.revise-form {
+  position: absolute;
+  left: 35%;
+  top: 70%;
+  height: 470px;
+}
+
+.revise-text {
+  text-align:center;
+  color: #2760ac;
+  font-size: 23px;
+}
+
+.revise {
+  font-size: 22px;
+  color: #2760ac;
+  border-color: #39b0ce41;
+  background-color: #2ea4c231;
+  padding: 5px 35px 5px 35px;
+  font-family: Comic Sans MS,
+    Comic Sans,
+    cursive;
+  border-radius: 6%;
+  cursor: pointer;
+}
+.revise:hover {
+  background-color: #e3ecc3d0;
+}
+
+.order-img{
+  position: absolute;
+  top: 13%;
+  left: 30%;
+}
+
+.order-t{
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  color: #2760ac;
+  text-align: center;
+  font-size: 25px;
+  width: 900px;
+  
+}
+.order-t th,.info-t th{
+  background-color: #a5ccf1;
+  height: 80px;
+}
+
+.order-t tr ,.info-t tr{
+  background-color: #d9e69d57;
+  height: 80px;
+  
+}
+.info-t{
+  position: absolute;
+  top: 80%;
+  left:43%;
+  color: #2760ac;
+  text-align: center;
+  font-size: 25px;
+  width: 500px;
+}
+
+.comment-img{
+  position: absolute;
+  top: 13%;
+  left: 30%;
+}
+
+.comment-t{
+  position: absolute;
+  top: 35%;
+  left: 29%;
+  color: #2760ac;
+  text-align: center;
+  font-size: 25px;
+  width: 1100px;
+}
+
+.comment-t th{
+  background-color: #a5f1d865;
+  height: 80px;
+}
+
+.comment-t tr{
+  background-color: #cccccc57;
+  height: 80px;
+  
+}
+/*footer*/
+footer {
+  height: 200px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1100px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS,
+  Comic Sans,
+  cursive;
+  color: #128571;
+}
+
+.wellcome{
+  position: absolute;
+  top: 1320px;  
+  left: 40%;
+  border-right: 2px solid #ffffffbf;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%); 
+  width: 450px;   
+  color: #532a88;
+}
+/*footer*/

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>會員資料</title>
+  <link rel="stylesheet" type="text/css" href="../css/member.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h2>GAMEROOM.COM</h2>
+      <div class="topnav">
+        <div class="search-container">
+
+          <input type="text" placeholder="搜尋.." name="search">
+          <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
+        </div>
+      </div>
+      <a href="../page/sign.html"> <img src="../image/user.png" class="user-logo"></a>
+      <ul class="menu">
+        <li><a href="../index.html">
+            <div class="underline">首頁</div>
+          </a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">商品區</a>
+          <div class="dropdown-content">
+            <a href="../page/allbg.html">所有桌遊</a>
+            <a href="../page/bgless.html">少人桌遊</a>
+            <a href="../page/bgmore.html">多人桌遊</a>
+          </div>
+        </li>
+        <li><a href="../page/shoppingcart1.html">購物車</a></li>
+        <li><a href="../page/aboutus.html">關於我們</a></li>
+        <li><a href="../page/member.html">會員專區</a></li>
+      </ul>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../image/gotop.jpg"></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <div class="tab">
+      <div class="t-text">
+      <img src="../image/beauty.jpg" class="beauty">
+      Hi！<br>
+      陳小美您好！    
+      </div>
+      <button class="tablinks" onclick="openMember(event, 'information')" id="defaultOpen">會員資料</button>
+      <button class="tablinks" onclick="openMember(event, 'order')">我的訂單</button>
+      <button class="tablinks" onclick="openMember(event, 'comment')">我的評論</button>
+    </div>
+
+    <div id="information" class="tabcontent">
+      <fieldset class="member-form">
+        <legend><img src="../image/member.jpg" class="member-img"></legend>
+        <div class="member-text">
+          姓名 name :&nbsp;陳小美
+          <p>帳號 account :&nbsp;beauty_1234</p>
+          <p>密碼 password :&nbsp;beautyisme</p>
+          <p>生日 birthday : &nbsp;88/05/20</p>
+          <img src="../image/m-logo.jpg" class="m-logo m-logo-heart m-logo-pulse animated">
+        </div>
+      </fieldset>
+      <form>
+        <fieldset class="revise-form">
+          <legend><img src="../image/revise.jpg" class="revise-img"></legend>
+          <div class="revise-text">
+            <label for="name">姓名 name &nbsp;</label>
+            <input type="text" name="revise"><br><br>
+            <label for="id">帳號 account &nbsp;</label>
+            <input type="text" name="revise"><br><br>
+            <label for="password">密碼 password &nbsp;</label>
+            <input type="text" name="revise"><br><br>
+            <label for="birthday">生日 birthday &nbsp;</label>
+            <input type="date" name="revise"><br><br>
+            <input type="submit" value="確定修改" class="revise">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="order" class="tabcontent">
+      <img src="../image/order.jpg" class="order-img">
+      <table class="order-t">
+        <tr>
+          <th>訂單編號</th>
+          <th>訂購產品</th>
+          <th>訂購日期</th>
+          <th>訂單金額</th>
+          <th>訂單狀態</th>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>狼人殺*1、德國蟑螂*1</td>
+          <td>2021/05/01 13:30</td>
+          <td>$890</td>
+          <td>出貨中</td>
+        </tr>
+
+        <tr>
+          <td>002</td>
+          <td>阿瓦隆*1</td>
+          <td>2021/04/12 10:30</td>
+          <td>$495</td>
+          <td>取貨成功</td>
+        </tr>
+
+        <tr>
+          <td>003</td>
+          <td>BANG！*1、Rummikub*1</td>
+          <td>2021/04/05 20:00</td>
+          <td>$1330</td>
+          <td>取貨成功</td>
+        </tr>
+      </table>
+      <table class="info-t">
+        <tr>
+          <th colspan="2">付款資訊</th>
+        </tr>
+        <tr>
+          <td>電話號碼</td>
+          <td>0966759875</td>
+        </tr>
+        <tr>
+          <td>收件地址</td>
+          <td>桃園市中壢區中北路200號</td>
+        </tr>
+        <tr>
+          <td>付款方式</td>
+          <td>貨到付款</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="comment" class="tabcontent">
+
+      <img src="../image/comment.jpg" class="comment-img">
+      <table class="comment-t">
+        <tr>
+          <th>評論商品</th>
+          <th>評論時間</th>
+          <th>標題</th>
+          <th>留言內容</th>
+          <th>評論星等</th>
+        </tr>
+        <tr>
+          <td>狼人殺</td>
+          <td>2021/03/05 13:58</td>
+          <td>很棒的商品！</td>
+          <td>快速到貨，內容與圖片相符！讚讚</td>
+          <td>★★★★★</td>
+        </tr>
+
+        <tr>
+          <td>阿瓦隆</td>
+          <td>2021/03/05 14:03</td>
+          <td>好好玩！</td>
+          <td>最喜歡阿瓦隆了！</td>
+          <td>★★★★★</td>
+        </tr>
+        <tr>
+          <td>德國蟑螂</td>
+          <td>2020/12/15 10:30</td>
+          <td>酷東東！</td>
+          <td>第一次看到這麼酷的桌遊！</td>
+          <td>★★★★</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      function openMember(evt, memberName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(memberName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
+
+
+    <footer>
+      訪客人數 : 6666人<br>
+      Copyright : GAMEROOM.COM <br>
+      E-mail : gameroom@gmail.com<br>
+      Tel : +886912568749
+      <p class="wellcome anim-typewriter">wellcome to GAMEROOM.COM！！</p>
+    </footer>
+  </div>
+</body>
+
+</html>

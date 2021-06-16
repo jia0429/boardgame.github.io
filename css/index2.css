@@ -3,7 +3,7 @@
 .memo {
   position: absolute;
   width: 300px;
-  right: 3%;
+  right: 5%;
   top: 20%;
 }
 
@@ -180,9 +180,10 @@
   opacity: 0.8;
 }
 
+
 /*footer*/
 footer {
-  height: 100px;
+  height: 200px;
   background-color: #dfe7fd;
   bottom: 0;
   width: 100%;
@@ -194,5 +195,42 @@ footer {
     cursive;
   color: #128571;
 }
+.wellcome{
+  position: absolute;
+  top: 1900px; 
+  left: 40%;
+  border-right: 2px solid #ffffffbf;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%); 
+  width: 450px;   
+  color: #532a88;
+}
 
 /*footer*/
+
+/*animation*/
+.animation {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.animation--infinite {
+  animation-iteration-count: infinite;
+}
+.animation--up-down {
+  animation-name: upDown;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}

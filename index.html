@@ -10,86 +10,89 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <h2>GAMEROOM.COM</h2>
-      <div class="topnav">
-        <div class="search-container">
-      
-          <input type="text" placeholder="搜尋.." name="search">
-          <button type="submit"><img src="image/search.jpg" class="search-logo"></button>
-      
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        <h2>GAMEROOM.COM</h2>
+        <div class="topnav">
+          <div class="search-container">
+
+            <input type="text" placeholder="搜尋.." name="search">
+            <button type="submit"><img src="image/search.jpg" class="search-logo"></button>
+
+          </div>
+          <a href="page/sign.html"><img src="image/user.png" class="user-logo"></a>
+          <ul class="menu">
+            <li><a href="index.html">
+                <div class="underline">首頁</div>
+              </a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">商品區</a>
+              <div class="dropdown-content">
+                <a href="page/allbg.html">所有桌遊</a>
+                <a href="page/bgless.html">少人桌遊</a>
+                <a href="page/bgmore.html">多人桌遊</a>
+              </div>
+            </li>
+            <li><a href="page/shoppingcart1.html">購物車</a></li>
+            <li><a href="page/aboutus.html">關於我們</a></li>
+            <li><a href="page/member.html">會員專區</a></li>
+          </ul>
+
         </div>
-      <a href="page/shoppingcart1.html"><img src="image/cart.jpg" class="cart-logo"></a>
-      <ul class="menu">
-        <li><a href="index.html">
-            <div class="underline">首頁</div>
-          </a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">商品區</a>
-          <div class="dropdown-content">
-            <a href="page/allbg.html">所有桌遊</a>
-            <a href="page/bgless.html">少人桌遊</a>
-            <a href="page/bgmore.html">多人桌遊</a>
-          </div>
-        </li>
-        <li><a href="page/shoppingcart1.html">購物車</a></li>
-        <li><a href="page/aboutus.html">關於我們</a></li>
-        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
-          <div class="dropdown-content">
-            <a href="page/sign.html">登入/註冊</a>
-            <a href="page/revise.html">修改資料</a>
-            <a href="page/order.html">我的訂單</a>
-          </div>
-        </li>
-      </ul>
+      </header>
+      <div class="bkg">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="image/gotop.jpg"></button>
+        <script>
+          var mybutton = document.getElementById("myBtn");
 
-</div>
-    </header>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="image/gotop.jpg"></button>
-    <script>
-      var mybutton = document.getElementById("myBtn");
+          window.onscroll = function () {
+            scrollFunction()
+          };
 
-      window.onscroll = function () {
-        scrollFunction()
-      };
+          function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+        <img src="image/memo.jpg" class="memo animation animation--infinite animation--up-down">
+        <div class="coverflow">
+          <a href="#"><img src="image/ad1.jpg"></a>
+          <a href="#"><img src="image/ad2.jpg"></a>
+          <a href="#"><img src="image/ad3.jpg"></a>
+        </div>
+        <div class="ad">
+          <marquee id="run">本店慶祝新開幕，全館滿599免運</marquee>
+        </div>
+        <div class="hotsale">
+          <img src="image/hotsale.jpg" class="h-t">
+          <a href="page/bg1.html"><img src="image/top1.jpg" class="top1"></a>
+          <a href="page/bg2.html"><img src="image/top2.jpg" class="top2"></a>
+          <a href="page/bg3.html"><img src="image/top3.jpg" class="top3"></a>
 
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <img src="image/memo.jpg" class="memo">
-    <div class="coverflow">
-      <a href="#"><img src="image/ad1.jpg"></a>
-      <a href="#"><img src="image/ad2.jpg"></a>
-      <a href="#"><img src="image/ad3.jpg"></a>
-    </div>
-    <div class="ad">
-      <marquee id="run">本店慶祝新開幕，全館滿599免運</marquee>
-    </div>
-    <div class="hotsale">
-      <img src="image/hotsale.jpg" class="h-t">
-      <a href="page/bg1.html"><img src="image/top1.jpg" class="top1"></a>
-      <a href="page/bg2.html"><img src="image/top2.jpg" class="top2"></a>
-      <a href="page/bg3.html"><img src="image/top3.jpg" class="top3"></a>
-      <a href="page/bg1.html"><img src="image/bg1.jpg" class="h1-img"></a>
-      <a href="page/bg2.html"><img src="image/bg2.jpg" class="h2-img"></a>
-      <a href="page/bg3.html"><img src="image/bg3.jpg" class="h3-img"></a>
-    </div>
+
+          <a href="page/bg1.html"><img src="image/bg1.jpg" class="h1-img"></a>
+          <a href="page/bg2.html"><img src="image/bg2.jpg" class="h2-img"></a>
+          <a href="page/bg3.html"><img src="image/bg3.jpg" class="h3-img"></a>
+        </div>
+
+      </div>
       <footer>
-    Copyright:GAMEROOM.COM <br>
-    Tel:+886912568749 <br>
-    訪客人數:6666人
-  </footer>
+        訪客人數 : 6666人<br>
+        Copyright : GAMEROOM.COM <br>
+        E-mail : gameroom@gmail.com<br>
+        Tel : +886912568749
+        <p class="wellcome anim-typewriter">wellcome to GAMEROOM.COM！！</p>
+      </footer>
+    </div>
   </div>
 </body>
 

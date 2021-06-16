@@ -155,7 +155,7 @@
 
   <script>
     //商品總價
- 
+
   </script>
 </head>
 
@@ -165,12 +165,12 @@
       <h2>GAMEROOM.COM</h2>
       <div class="topnav">
         <div class="search-container">
-      
+
           <input type="text" placeholder="搜尋.." name="search">
           <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
-      </div>
         </div>
-      <a href="page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      </div>
+      <a href="../page/sign.html"> <img src="../image/user.png" class="user-logo"></a>
       <ul class="menu">
         <li><a href="../index.html">
             <div class="underline">首頁</div>
@@ -185,13 +185,7 @@
         </li>
         <li><a href="../page/shoppingcart1.html">購物車</a></li>
         <li><a href="../page/aboutus.html">關於我們</a></li>
-        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
-          <div class="dropdown-content">
-            <a href="../page/sign.html">登入/註冊</a>
-            <a href="../page/revise.html">修改資料</a>
-            <a href="../page/order.html">我的訂單</a>
-          </div>
-        </li>
+        <li><a href="../page/member.html">會員專區</a></li>
       </ul>
 
     </header>
@@ -213,17 +207,15 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
-    <div class="step-title">
-      <a href="shoppingcart1.html"><img src="../image/step1-a.jpg"></a>
-      <a href="shoppingcart2.html"><img src="../image/step2-b.jpg"></a>
-      <a href="shoppingcart3.html"><img src="../image/step3-b.jpg"></a>
+    <div class="step1">購物車 <br>
+      ________________
     </div>
     <div id="cart">
       <div class="container">
         <div class="cart-title">
           <div class="product">&nbsp;&nbsp;&nbsp;商品</div>
           <div class="price">&nbsp;&nbsp;&nbsp;單價</div>
-          <div class="count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;數量</div>
+          <div class="count">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;數量</div>
           <div class="amount">&nbsp;&nbsp;&nbsp;總價</div>
         </div>
         <div class="cart-text">
@@ -235,7 +227,7 @@
           <input id="min" name="" type="button" value="-" />
           <input id="quantity" name="" type="text" value="0" />
           <input id="add" name="" type="button" value="+" />
-          <p class="s-total">總價：<label id="total"></label></p>
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total"></label></p>
 
 
         </div>
@@ -250,7 +242,7 @@
           <input id="min2" name="" type="button" value="-" />
           <input id="quantity2" name="" type="text" value="0" />
           <input id="add2" name="" type="button" value="+" />
-          <p class="s-total">總價：<label id="total2"></label></p>
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total2"></label></p>
         </div>
 
         <div class="cart-text">
@@ -263,7 +255,7 @@
           <input id="min3" name="" type="button" value="-" />
           <input id="quantity3" name="" type="text" value="0" />
           <input id="add3" name="" type="button" value="+" />
-          <p class="s-total">總價：<label id="total3"></label></p>
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total3"></label></p>
         </div>
 
         <div class="cart-text">
@@ -276,7 +268,7 @@
           <input id="min4" name="" type="button" value="-" />
           <input id="quantity4" name="" type="text" value="0" />
           <input id="add4" name="" type="button" value="+" />
-          <p class="s-total">總價：<label id="total4"></label></p>
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total4"></label></p>
         </div>
 
         <div class="cart-text">
@@ -289,7 +281,7 @@
           <input id="min5" name="" type="button" value="-" />
           <input id="quantity5" name="" type="text" value="0" />
           <input id="add5" name="" type="button" value="+" />
-          <p class="s-total">總價：<label id="total5"></label></p>
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total5"></label></p>
         </div>
 
         <div class="cart-text">
@@ -302,20 +294,47 @@
           <input id="min6" name="" type="button" value="-" />
           <input id="quantity6" name="" type="text" value="0" />
           <input id="add6" name="" type="button" value="+" />
-          <p class="s-total">總價：<label id="total6"></label></p>
+          <p class="s-total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總價：<label id="total6"></label></p>
         </div>
 
       </div>
-      <p class="s-all">total:<label id="all-total"></label></p>
-      <button input type="submit" class="cart-step1"><a href="shoppingcart2.html"
-          style="text-decoration: none; color: #454cb3;">下一步:確認付款資訊</a></button>
+    
     </div>
 
-      <footer>
-        Copyright:GAMEROOM.COM <br>
-        Tel:+886912568749 <br>
-        訪客人數:6666人
-      </footer>
+    <div class="step2">立即下單 <br>
+      ________________
+    </div>
+    <form>
+      <fieldset class="buy-form">
+        <legend class="c-legend">付款資訊</legend>
+        <div class="buy-text">
+          
+          <label for="name">姓名 name &nbsp;</label>
+          <input type="text" name="buy"><br><br>
+          <label for="number">電話號碼 number &nbsp;</label>
+          <input type="text" name="buy"><br><br>
+          <label for="address">收件地址 address &nbsp;</label>
+          <input type="text" name="buy"><br><br>
+          <label for="send">付款方式 payway &nbsp;</label>
+          <select class="pay-opt">
+            <option value="a">ATM轉帳</option>
+            <option value="b"> 信用卡轉帳</option>
+            <option value="c">貨到付款</option>
+          </select>
+          <button class="send">結帳</button>
+        </div>
+      </fieldset>
+    </form>
+
+    
+    <div class="gif4 animation animation--infinite animation--up-down"><img src="../image/gif4.jpg"></div>
+    <footer>
+      訪客人數 : 6666人<br>
+      Copyright : GAMEROOM.COM <br>
+      E-mail : gameroom@gmail.com<br>
+      Tel : +886912568749
+      <p class="wellcome anim-typewriter">wellcome to GAMEROOM.COM！！</p>
+    </footer>
   </div>
 </body>
 

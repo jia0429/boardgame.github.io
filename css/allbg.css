@@ -1,6 +1,5 @@
 @import url(../css/index.css);
 
-
 .allbg {
   font-size: 50px;
   font-weight: 800;
@@ -15,48 +14,54 @@
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 10%;
+  transition: transform 0.4s ease;
 }
 
 .a-bg2 {
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 40%;
+  transition: transform 0.4s ease;
 }
 
 .a-bg3 {
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 70%;
+  transition: transform 0.4s ease;
 }
 
 .a-bg4 {
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 896px;
-  left: 190px;
+  top: 110%;
+  left: 10%;
+  transition: transform 0.4s ease;
 }
 
 .a-bg5 {
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 896px;
-  left: 760px;
+  top: 110%;
+  left: 40%;
+  transition: transform 0.4s ease;
 }
 
 .a-bg6 {
   width: auto;
   max-width: 1200px;
   position: absolute;
-  top: 896px;
-  left: 1329px;
+  top: 110%;
+  left: 70%;
+  transition: transform 0.4s ease;
 }
 
 .a-bg1,
@@ -66,17 +71,50 @@
 .a-bg5,
 .a-bg6 {
   border-radius: 25px;
-  box-shadow: 10px 10px 15px 1px;
+  box-shadow: 10px 10px 10px 1px;
 }
 
+.trigger:hover .a-bg1,
+.trigger:hover .a-bg2,
+.trigger:hover .a-bg3,
+.trigger:hover .a-bg4,
+.trigger:hover .a-bg5,
+.trigger:hover .a-bg6,
+.trigger:focus .a-bg1,
+.trigger:focus .a-bg2,
+.trigger:focus .a-bg3,
+.trigger:focus .a-bg4,
+.trigger:focus .a-bg5,
+.trigger:focus .a-bg6 {
+  transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+}
+
+.trigger:hover .overlay1,
+.trigger:hover .overlay2,
+.trigger:hover .overlay3,
+.trigger:hover .overlay4,
+.trigger:hover .overlay5,
+.trigger:hover .overlay6,
+.trigger:focus .overlay1,
+.trigger:focus .overlay2,
+.trigger:focus .overlay3,
+.trigger:focus .overlay4,
+.trigger:focus .overlay5,
+.trigger:focus .overlay6 {
+  transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  opacity: 0.5;
+}
 
 .bg1 {
   font-size: 40px;
   font-weight: 800;
   position: absolute;
-  top: 720px;
-  left: 320px;
-
+  top: 85%;
+  left:17%;
 }
 
 
@@ -86,16 +124,16 @@
   font-weight: 600;
   color: #3d7d8d;
   position: absolute;
-  top: 790px;
-  left: 345px;
+  top: 94%;
+  left: 18%;
 }
 
 .bg2 {
   font-size: 40px;
   font-weight: 800;
   position: absolute;
-  top: 720px;
-  left: 895px;
+  top: 85%;
+  left:47%;
 }
 
 .price2 {
@@ -103,16 +141,16 @@
   font-weight: 600;
   color: #3d7d8d;
   position: absolute;
-  top: 790px;
-  left: 915px;
+  top: 94%;
+  left: 48%;
 }
 
 .bg3 {
   font-size: 40px;
   font-weight: 800;
   position: absolute;
-  top: 720px;
-  left: 1465px;
+  top: 85%;
+  left:77%;
 }
 
 .price3 {
@@ -120,16 +158,16 @@
   font-weight: 600;
   color: #3d7d8d;
   position: absolute;
-  top: 790px;
-  left: 1490px;
+  top: 94%;
+  left: 78%;
 }
 
 .bg4 {
   font-size: 40px;
   font-weight: 800;
   position: absolute;
-  top: 1370px;
-  left: 290px;
+  top: 165%;
+  left:16%;
 }
 
 .price4 {
@@ -137,16 +175,16 @@
   font-weight: 600;
   color: #3d7d8d;
   position: absolute;
-  top: 1450px;
-  left: 340px;
+  top: 175%;
+  left: 18%;
 }
 
 .bg5 {
   font-size: 40px;
   font-weight: 800;
   position: absolute;
-  top: 1370px;
-  left: 850px;
+  top: 165%;
+  left:45%;
 }
 
 .price5 {
@@ -154,16 +192,16 @@
   font-weight: 600;
   color: #3d7d8d;
   position: absolute;
-  top: 1450px;
-  left: 905px;
+  top: 175%;
+  left: 47%;
 }
 
 .bg6 {
   font-size: 40px;
   font-weight: 800;
   position: absolute;
-  top: 1370px;
-  left: 1485px;
+  top: 165%;
+  left:78%;
 }
 
 .price6 {
@@ -171,8 +209,8 @@
   font-weight: 600;
   color: #3d7d8d;
   position: absolute;
-  top: 1450px;
-  left: 1485px;
+  top: 175%;
+  left: 78%;
 }
 
 a {
@@ -181,73 +219,73 @@ a {
 
 .overlay1 {
   position: absolute;
-  top: 237px;
-  left: 190px;
+  top: 30%;
+  left: 10%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
 .overlay2 {
   position: absolute;
-  top: 237px;
-  left: 760px;
+  top: 30%;
+  left: 40%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
 .overlay3 {
   position: absolute;
-  top: 237px;
-  left: 1329px;
+  top: 30%;
+  left: 70%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
 .overlay4 {
   position: absolute;
-  top: 896px;
-  left: 190px;
+  top: 110%;
+  left: 10%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
 .overlay5 {
   position: absolute;
-  top: 896px;
-  left: 760px;
+  top: 110%;
+  left: 40%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
 .overlay6 {
   position: absolute;
-  top: 896px;
-  left: 1329px;
+  top: 110%;
+  left: 70%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
@@ -285,17 +323,31 @@ a {
 
 /*footer*/
 footer {
-  height: 100px;
+  height: 200px;
   background-color: #dfe7fd;
   bottom: 0;
   width: 100%;
-  margin-top: 1500px;
+  margin-top: 1700px;
   text-align: center;
   font-size: 25px;
   font-family: Comic Sans MS,
     Comic Sans,
     cursive;
   color: #128571;
+}
+
+.wellcome{
+  position: absolute;
+  top: 1900px;
+  left: 38.5%;
+  border-right: 2px solid #ffffffbf;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%); 
+  width: 450px;   
+  color: #532a88;
 }
 
 /*footer*/

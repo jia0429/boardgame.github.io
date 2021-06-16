@@ -19,7 +19,7 @@
           <button type="submit"><img src="../image/search.jpg" class="search-logo"></button>
         </div>
       </div>
-      <a href="page/shoppingcart1.html"><img src="../image/cart.jpg" class="cart-logo"></a>
+      <a href="../page/sign.html">  <img src="../image/user.png" class="user-logo"></a>
       <ul class="menu">
         <li><a href="../index.html">
             <div class="underline">首頁</div>
@@ -34,13 +34,7 @@
         </li>
         <li><a href="../page/shoppingcart1.html">購物車</a></li>
         <li><a href="../page/aboutus.html">關於我們</a></li>
-        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">會員專區</a>
-          <div class="dropdown-content">
-            <a href="../page/sign.html">登入/註冊</a>
-            <a href="../page/revise.html">修改資料</a>
-            <a href="../page/order.html">我的訂單</a>
-          </div>
-        </li>
+        <li><a href="../page/member.html">會員專區</a></li>
       </ul>
 
     </header>
@@ -157,11 +151,10 @@
       <div class="bg-sale">全館滿$599免運費<br>全館商品買三送一<br></div>
       <div class="money">NT$440</div>
       <div class="bg-amount">庫存數量:5</div>
-      <div class="bg-number">數量:&nbsp;<input id="bg-min" name="" type="button" value="-" />
-        <input id="bg-quantity" name="" type="text" value="0" />
-        <input id="bg-add" name="" type="button" value="+" /></div>
+      <div class="bg-number">數量:&nbsp;   </div>
+        <input type="number" name="points" class="number" min="0" max="20" value="1">
 
-      <div><button class="bg-sent">加入購物車</button></div>
+      <button class="bg-sent">加入購物車</button></div>
     </div>
     <div class="part-tab">
       <div class="bg-tab">
@@ -293,10 +286,12 @@
       document.getElementById("defaultOpen").click();
     </script>
       <footer>
-    Copyright:GAMEROOM.COM <br>
-    Tel:+886912568749 <br>
-    訪客人數:6666人
-  </footer>
+       訪客人數 : 6666人<br>
+      Copyright : GAMEROOM.COM <br>
+      E-mail : gameroom@gmail.com<br>
+      Tel : +886912568749
+      <p class="wellcome anim-typewriter">wellcome to GAMEROOM.COM！！</p>
+    </footer>
   </div>
 </body>
 

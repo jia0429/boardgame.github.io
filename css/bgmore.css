@@ -27,7 +27,7 @@
   position: absolute;
   top: 40%;
   left: 10%;
-
+  transition: 0.4s ease;
 }
 
 .a-bg2 {
@@ -36,6 +36,7 @@
   position: absolute;
   top: 40%;
   left: 40%;
+  transition: 0.4s ease;
 }
 
 .a-bg3 {
@@ -44,6 +45,7 @@
   position: absolute;
   top: 40%;
   left: 70%;
+  transition: 0.4s ease;
 }
 
 .a-bg1,
@@ -51,6 +53,29 @@
 .a-bg3 {
   border-radius: 25px;
   box-shadow: 10px 10px 15px 1px;
+}
+
+.trigger:hover .a-bg1,
+.trigger:hover .a-bg2,
+.trigger:hover .a-bg3,
+.trigger:focus .a-bg1,
+.trigger:focus .a-bg2,
+.trigger:focus .a-bg3 {
+  transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+}
+
+.trigger:hover .overlay1,
+.trigger:hover .overlay2,
+.trigger:hover .overlay3,
+.trigger:focus .overlay1,
+.trigger:focus .overlay2,
+.trigger:focus .overlay3 {
+  transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  opacity: 0.5;
 }
 
 .bg1 {
@@ -111,37 +136,37 @@ a {
 
 .overlay1 {
   position: absolute;
-  top: 378px;
-  left: 190px;
+  top: 40%;
+  left: 10%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
 .overlay2 {
   position: absolute;
-  top: 378px;
-  left: 760px;
+  top: 40%;
+  left: 40%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
 .overlay3 {
   position: absolute;
-  top: 378px;
-  left: 1330px;
+  top: 40%;
+  left: 70%;
   border-radius: 5%;
   height: 500px;
   width: 380px;
   opacity: 0;
-  transition: 0s ease;
+  transition: 0.4s ease;
   background-color: #000000;
 }
 
@@ -166,7 +191,7 @@ a {
 }
 /*footer*/
 footer {
-  height: 100px;
+  height: 200px;
   background-color: #dfe7fd;
   bottom: 0;
   width: 100%;
@@ -177,6 +202,19 @@ footer {
   Comic Sans,
   cursive;
   color: #128571;
+}
+.wellcome{
+  position: absolute;
+  top: 1200px;  
+  left: 40%;
+  border-right: 2px solid #ffffffbf;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%); 
+  width: 450px;   
+  color: #532a88;
 }
 
 /*footer*/
